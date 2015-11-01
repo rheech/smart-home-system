@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 namespace libdevicecomm
 {
@@ -71,6 +72,34 @@ namespace libdevicecomm
             ms.Close();
 
             return cbp;
+        }
+
+        // https://social.msdn.microsoft.com/Forums/vstudio/en-US/0a5aa658-7276-42e5-9d9e-b786694d6020/c-serialize-liststring-to-xml?forum=csharpgeneral
+        public static byte[] Serialize(List<T> list)
+        {
+            byte[] rtnData;
+            XmlSerializer serializer = new XmlSerializer(typeof(List<T>));
+            MemoryStream ms = new MemoryStream();
+
+            serializer.Serialize(ms, list);
+            rtnData = ms.ToArray();
+
+            ms.Close();
+
+            return rtnData;
+        }
+
+        public static void Deserialize(byte[] data, ref List<T> list)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(List<T>));
+            MemoryStream ms = new MemoryStream(data);
+
+            list = new List<T>();
+            List<T> other = (List<T>)(serializer.Deserialize(ms));
+            list.Clear();
+            list.AddRange(other);
+
+            ms.Close();
         }
     }
 }

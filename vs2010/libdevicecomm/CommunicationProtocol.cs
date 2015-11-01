@@ -17,5 +17,9 @@ namespace libdevicecomm
         {
 
         }
+
+        public void SendData(int DeviceID, byte[] data)
+        {
+        }
     }
 }
