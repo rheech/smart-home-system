@@ -1,0 +1,12 @@
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\bin\Debug\DeviceTester2.exe
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\bin\Debug\DeviceTester2.pdb
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\bin\Debug\libdeviceui.dll
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\bin\Debug\libdevicecomm.dll
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\bin\Debug\libdeviceui.pdb
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\bin\Debug\libdevicecomm.pdb
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\obj\x86\Debug\DeviceTester2.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\obj\x86\Debug\DeviceTester2.Properties.Resources.resources
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\obj\x86\Debug\DeviceTester2.csproj.GenerateResource.Cache
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\obj\x86\Debug\DeviceTester2.exe
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\obj\x86\Debug\DeviceTester2.pdb
+D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester2\obj\x86\Debug\DeviceTester.frmMain.resources
