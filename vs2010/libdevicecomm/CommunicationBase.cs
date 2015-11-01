@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Net.Sockets;
 using System.Net;
+using System.Xml.Serialization;
 
 namespace libdevicecomm
 {
@@ -96,6 +97,7 @@ namespace libdevicecomm
 
         private NetSocket _nsUDPClient, _nsUDPServer, _nsTCPClient, _nsTCPServer;
         private NetSocket _rcvClient;
+        //private List<NetSocket> _nsTCPServerClient;
         private CommunicationBaseInfo _myInfo, _leaderInfo;
         private List<CommunicationBaseInfo> _infoList;
 
@@ -118,6 +120,8 @@ namespace libdevicecomm
             _nsTCPClient = new NetSocket(ProtocolType.Tcp);
             _nsTCPServer = new NetSocket(ProtocolType.Tcp);
 
+            _infoList = new List<CommunicationBaseInfo>();
+
             // Configure TCP Sockets
             ConfigureEventCallback();
             /*wsTCPServer.OnDataArrival += new WinSocket.onDataArrival(wsTCPServer_OnDataArrival);
@@ -128,6 +132,7 @@ namespace libdevicecomm
             _nsTCPServer.OnDataArrival += new NetSocket.cbDataArrival(nsTCPServer_OnDataArrival);
             _nsTCPServer.OnClose += new NetSocket.cbClose(nsTCPServer_OnClose);
             _nsTCPClient.OnConnect += new NetSocket.cbConnect(nsTCPClient_OnConnect);
+            _nsTCPClient.OnDataArrival += new NetSocket.cbDataArrival(nsTCPClient_OnDataArrival);
         }
 
         private void ConfigureEventCallback()
@@ -153,6 +158,7 @@ namespace libdevicecomm
             // Configure myInfo
             _myInfo.info.isLeader = true;
             _myInfo.info.TCPListenPort = iTCPListenPort;
+            _infoList.Add(_myInfo);
             RaiseEventConsoleMessage("Configuring my info...");
 
             if (OnStatusChange != null)
@@ -221,6 +227,10 @@ namespace libdevicecomm
 
                         // Connect to a newbie (if I am a leader)
                         RaiseEventConsoleMessage(String.Format("Connecting to a new client, {0}:{1}.", remoteIP.Address.ToString(), cbi.info.TCPListenPort));
+
+                        // Add newbie to the list
+                        _infoList.Add(cbi);
+
                         _nsTCPClient.Close();
                         _nsTCPClient.Connect(remoteIP.Address, cbi.info.TCPListenPort);
                     }
@@ -240,8 +250,16 @@ namespace libdevicecomm
                                     _leaderInfo.DeviceID, _leaderInfo.info.TCPAddress, _leaderInfo.info.TCPListenPort));
 
                     // Request Client List to the leader
-                    RaiseEventConsoleMessage("Transmitting previous client list to the newbie...");
+                    RaiseEventConsoleMessage("Requesting client list...");
+                    _rcvClient.SendData(CreateMessage(COMMUNICATION_STANDARD.REQUEST_CLIENT_LIST));
                     //byte[] clientList = CommunicationBaseInfo.Serialize(_infoList);
+                    break;
+                case COMMUNICATION_STANDARD.REQUEST_CLIENT_LIST:
+                    /*_nsTCPClient.SendData(CreateMessage(COMMUNICATION_STANDARD.RESPONSE_CLIENT_LIST,
+                                    CommunicationBaseInfo.Serialize(_infoList)));*/
+                    break;
+                case COMMUNICATION_STANDARD.RESPONSE_CLIENT_LIST:
+                    
                     break;
                 default:
                     break;
@@ -290,6 +308,30 @@ namespace libdevicecomm
             _nsTCPClient.SendData(tcpDataToSend);
         }
 
+        private void nsTCPClient_OnDataArrival(EndPoint remoteEP, byte[] data)
+        {
+            MESSAGE_HEADER header;
+            CommunicationBaseInfo cbi = null;
+
+            // Fill out remote IP address
+            IPEndPoint ipAddress = (IPEndPoint)remoteEP;
+
+            header = DispatchMessage(ref data);
+
+            // Truncate if it is a self-loop message
+            if (header.MessageFrom != _myInfo.DeviceID)
+            {
+                // Get cbi if exists
+                if (data.Length > 0)
+                {
+                    cbi = CommunicationBaseInfo.FromBinary(data);
+                    cbi.info.TCPAddress = ipAddress.Address;
+                }
+
+                TranslateMessage(remoteEP, header, cbi);
+            }
+        }
+
         private void RaiseEventConsoleMessage(string message)
         {
             if (OnConsoleMessage != null)
@@ -316,6 +358,13 @@ namespace libdevicecomm
             Array.Copy(data, 0, dataByte, enumSize, data.Length);
 
             return dataByte;
+        }
+
+        private byte[] CreateMessage(COMMUNICATION_STANDARD standard)
+        {
+            byte[] data = new byte[0];
+
+            return CreateMessage(standard, data);
         }
 
         private byte[] CreateMessage(COMMUNICATION_STANDARD standard, byte[] data)
