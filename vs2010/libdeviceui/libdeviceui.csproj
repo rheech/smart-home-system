@@ -42,12 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="cptConsoleTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cptConsoleTextBox.Designer.cs">
+      <DependentUpon>cptConsoleTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAbstractUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAbstractUI.Designer.cs">
       <DependentUpon>frmAbstractUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeviceUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeviceUI.Designer.cs">
+      <DependentUpon>frmDeviceUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,6 +71,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmAbstractUI.resx">
       <DependentUpon>frmAbstractUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeviceUI.resx">
+      <DependentUpon>frmDeviceUI.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

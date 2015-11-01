@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace DeviceTester
 {
-    public partial class frmMain : libdeviceui.frmAbstractUI
+    public partial class frmMain : libdeviceui.frmDeviceUI
     {
         public frmMain()
         {

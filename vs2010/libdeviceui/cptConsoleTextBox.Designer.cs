@@ -1,13 +1,13 @@
-﻿namespace DeviceTester
+﻿namespace libdeviceui
 {
-    partial class frmMain
+    partial class cptConsoleTextBox
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -28,24 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frmMain
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 312);
-            this.Name = "frmMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
-            this.Text = "DeviceTester1";
-            this.Load += new System.EventHandler(this.frmMain_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            components = new System.ComponentModel.Container();
         }
 
         #endregion
-
     }
 }
-

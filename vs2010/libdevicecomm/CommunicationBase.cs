@@ -72,8 +72,8 @@ namespace libdevicecomm
     {
         FIND_LEADER,
         ANSWER_LEADER,
-        LEADER_INFO,
-        REQUEST_CLIENT_LIST
+        REQUEST_CLIENT_LIST,
+        RESPONSE_CLIENT_LIST
     }
 
     public class CommunicationBase
@@ -212,7 +212,7 @@ namespace libdevicecomm
             switch (header.MessageType)
             {
                 case COMMUNICATION_STANDARD.FIND_LEADER: // Find leader from newbie
-                    RaiseEventConsoleMessage(String.Format("Received broadcast from {0}. IP address is {1}.", cbi.DeviceID, remoteEP.ToString()));
+                    RaiseEventConsoleMessage(String.Format("Received broadcast from {0}. IP address is {1}.", cbi.DeviceID, remoteIP.Address.ToString()));
 
                     if (_myInfo.info.isLeader)
                     {
@@ -220,7 +220,7 @@ namespace libdevicecomm
                         //_nsUDPClient.SendData(CreateMessage(COMMUNICATION_STANDARD.ANSWER_LEADER, replyData));
 
                         // Connect to a newbie (if I am a leader)
-                        RaiseEventConsoleMessage(String.Format("Connecting to a new client, {0}:{1}.", remoteEP.ToString(), cbi.info.TCPListenPort));
+                        RaiseEventConsoleMessage(String.Format("Connecting to a new client, {0}:{1}.", remoteIP.Address.ToString(), cbi.info.TCPListenPort));
                         _nsTCPClient.Close();
                         _nsTCPClient.Connect(remoteIP.Address, cbi.info.TCPListenPort);
                     }
@@ -232,11 +232,16 @@ namespace libdevicecomm
                     _myInfo.info.isLeader = false;
 
                     // Fill out the leader's IP address
+                    _leaderInfo = cbi;
                     _leaderInfo.info.TCPAddress = remoteIP.Address;
 
                     RaiseEventConsoleMessage("Received current leader information.");
                     RaiseEventConsoleMessage(String.Format("Current leader is {0}. TCP address is {1}:{2}.",
                                     _leaderInfo.DeviceID, _leaderInfo.info.TCPAddress, _leaderInfo.info.TCPListenPort));
+
+                    // Request Client List to the leader
+                    RaiseEventConsoleMessage("Transmitting previous client list to the newbie...");
+                    //byte[] clientList = CommunicationBaseInfo.Serialize(_infoList);
                     break;
                 default:
                     break;
