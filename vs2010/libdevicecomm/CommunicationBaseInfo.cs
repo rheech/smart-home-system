@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
+using System.Net;
 
 namespace libdevicecomm
 {
@@ -24,9 +25,9 @@ namespace libdevicecomm
         public class NodeInfo
         {
             public int TCPListenPort;
-            public string TCPAddress;
+            public IPAddress TCPAddress;
 
-            public string SOAAddress;
+            public IPAddress SOAAddress;
             public bool isLeader;
 
             //public bool Equals(
@@ -59,7 +60,7 @@ namespace libdevicecomm
             {
                 if (info != null)
                 {
-                    return info.TCPAddress != "";
+                    return info.TCPAddress != null;
                 }
 
                 return false;
