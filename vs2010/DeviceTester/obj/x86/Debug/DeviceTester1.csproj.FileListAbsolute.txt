@@ -10,3 +10,9 @@ D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester\obj\x86\Debug\Device
 D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester\obj\x86\Debug\DeviceTester.Properties.Resources.resources
 D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester\obj\x86\Debug\DeviceTester1.csproj.GenerateResource.Cache
 D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\DeviceTester\obj\x86\Debug\DeviceTester.frmMain.resources
+D:\Users\chlee\Desktop\SmartHome\vs2010\DeviceTester\bin\Debug\DeviceTester.exe
+D:\Users\chlee\Desktop\SmartHome\vs2010\DeviceTester\bin\Debug\DeviceTester.pdb
+D:\Users\chlee\Desktop\SmartHome\vs2010\DeviceTester\bin\Debug\libdeviceui.dll
+D:\Users\chlee\Desktop\SmartHome\vs2010\DeviceTester\bin\Debug\libdevicecomm.dll
+D:\Users\chlee\Desktop\SmartHome\vs2010\DeviceTester\bin\Debug\libdeviceui.pdb
+D:\Users\chlee\Desktop\SmartHome\vs2010\DeviceTester\bin\Debug\libdevicecomm.pdb

@@ -7,3 +7,7 @@ D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui
 D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui.pdb
 D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui.frmAbstractUI.resources
 D:\Users\Cheong\Desktop\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui.csproj.GenerateResource.Cache
+D:\Users\chlee\Desktop\SmartHome\vs2010\libdeviceui\bin\Debug\libdeviceui.dll
+D:\Users\chlee\Desktop\SmartHome\vs2010\libdeviceui\bin\Debug\libdeviceui.pdb
+D:\Users\chlee\Desktop\SmartHome\vs2010\libdeviceui\bin\Debug\libdevicecomm.dll
+D:\Users\chlee\Desktop\SmartHome\vs2010\libdeviceui\bin\Debug\libdevicecomm.pdb
