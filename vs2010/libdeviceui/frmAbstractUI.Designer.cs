@@ -58,7 +58,7 @@
             // tsMenuExit
             // 
             this.tsMenuExit.Name = "tsMenuExit";
-            this.tsMenuExit.Size = new System.Drawing.Size(93, 22);
+            this.tsMenuExit.Size = new System.Drawing.Size(92, 22);
             this.tsMenuExit.Text = "E&xit";
             this.tsMenuExit.Click += new System.EventHandler(this.tsMenuExit_Click);
             // 
@@ -75,8 +75,8 @@
             // tsLabel
             // 
             this.tsLabel.Name = "tsLabel";
-            this.tsLabel.Size = new System.Drawing.Size(121, 17);
-            this.tsLabel.Text = "toolStripStatusLabel1";
+            this.tsLabel.Size = new System.Drawing.Size(129, 17);
+            this.tsLabel.Text = "Follower (Current ID: 0)";
             // 
             // frmAbstractUI
             // 
