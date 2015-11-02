@@ -18,7 +18,6 @@ namespace libdeviceui
 
         private void frmDeviceUI_Load(object sender, EventArgs e)
         {
-
         }
 
         protected override void cp_OnConsoleMessage(string message)
