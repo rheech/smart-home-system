@@ -1,0 +1,14 @@
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceVerifier\bin\Debug\DeviceVerifier.exe
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceVerifier\bin\Debug\DeviceVerifier.pdb
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceVerifier\bin\Debug\libdeviceui.dll
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceVerifier\bin\Debug\libdevicecomm.dll
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceVerifier\bin\Debug\libdeviceui.pdb
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceVerifier\bin\Debug\libdevicecomm.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.exe
+D:\Users\Cheong\Desktop\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.Properties.Resources.resources
+D:\Users\Cheong\Desktop\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.csproj.GenerateResource.Cache
+D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceVerifier.exe
+D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceVerifier.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.frmMain.resources

@@ -281,7 +281,18 @@ namespace libdevicecomm
         public void Connect(IPEndPoint remoteEP)
         {
             _localEP = remoteEP;
-            _sock.BeginConnect(remoteEP, new AsyncCallback(OnConnectCallback), _sock);
+
+            try
+            {
+                _sock.BeginConnect(remoteEP, new AsyncCallback(OnConnectCallback), _sock);
+            }
+            catch (ObjectDisposedException ex)
+            {
+                if (OnError != null)
+                {
+                    OnError(ex.ToString());
+                }
+            }
         }
 
         private void OnConnectCallback(IAsyncResult ar)
@@ -324,40 +335,53 @@ namespace libdevicecomm
 
             int read;
 
-            // Different task for UDP / TCP
-            if (_sockInfo.protocolType != ProtocolType.Udp)
+            try
             {
-                SocketError errCode;
-                read = s.EndReceive(ar, out errCode);
-                _remoteEP = s.RemoteEndPoint;
-
-                if (errCode != SocketError.Success)
+                // Different task for UDP / TCP
+                if (_sockInfo.protocolType != ProtocolType.Udp)
                 {
-                    _sock.Close();
+                    SocketError errCode;
 
-                    if (OnClose != null)
+
+                    read = s.EndReceive(ar, out errCode);
+
+                    _remoteEP = s.RemoteEndPoint;
+
+                    if (errCode != SocketError.Success)
                     {
-                        OnClose();
-                    }
+                        _sock.Close();
 
-                    return;
+                        if (OnClose != null)
+                        {
+                            OnClose();
+                        }
+
+                        return;
+                    }
+                }
+                else
+                {
+                    read = s.EndReceiveFrom(ar, ref ep);
+                    _remoteEP = ep;
+                }
+
+                // Save received data
+                if (read > 0)
+                {
+                    _bufferedIO.PushData(_dataBuffer);
+                }
+
+                _dataBuffer = new byte[BUFFER_SIZE];
+
+                Receive();
+            }
+            catch (ObjectDisposedException ex)
+            {
+                if (OnError != null)
+                {
+                    OnError(ex.ToString());
                 }
             }
-            else
-            {
-                read = s.EndReceiveFrom(ar, ref ep);
-                _remoteEP = ep;
-            }
-
-            // Save received data
-            if (read > 0)
-            {
-                _bufferedIO.PushData(_dataBuffer);
-            }
-
-            _dataBuffer = new byte[BUFFER_SIZE];
-
-            Receive();
         }
 
         public void SendData(byte[] data)

@@ -36,11 +36,17 @@ namespace libdevicecomm
         public int DeviceID;
         public NodeInfo info;
 
-        public CommunicationBaseInfo()
+        /*public CommunicationBaseInfo()
         {
             Random rnd = new Random();
             DeviceID = rnd.Next(0, 65535);
 
+            info = new NodeInfo();
+        }*/
+
+        public CommunicationBaseInfo(int deviceID)
+        {
+            DeviceID = deviceID;
             info = new NodeInfo();
         }
 

@@ -60,6 +60,12 @@
     <Compile Include="frmDeviceUI.Designer.cs">
       <DependentUpon>frmDeviceUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVerifierUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerifierUI.Designer.cs">
+      <DependentUpon>frmVerifierUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeviceUI.resx">
       <DependentUpon>frmDeviceUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerifierUI.resx">
+      <DependentUpon>frmVerifierUI.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

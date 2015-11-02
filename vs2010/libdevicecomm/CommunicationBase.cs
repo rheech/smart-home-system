@@ -107,13 +107,13 @@ namespace libdevicecomm
 
         public CommunicationBase()
         {
-            
+
         }
 
-        private void Initialize()
+        private void Initialize(int deviceID)
         {
-            _myInfo = new CommunicationBaseInfo();
-            _leaderInfo = new CommunicationBaseInfo();
+            _myInfo = new CommunicationBaseInfo(deviceID);
+            _leaderInfo = _myInfo;
 
             _nsUDPClient = new NetSocket(ProtocolType.Udp);
             _nsUDPServer = new NetSocket(ProtocolType.Udp);
@@ -140,11 +140,11 @@ namespace libdevicecomm
 
         }
 
-        public void StartCommunication()
+        public void StartCommunication(int deviceID)
         {
             byte[] data;
 
-            Initialize();
+            Initialize(deviceID);
 
             iTCPListenPort = NetSocket.GetAvailablePort();
 
@@ -259,7 +259,7 @@ namespace libdevicecomm
                                     CommunicationBaseInfo.Serialize(_infoList)));*/
                     break;
                 case COMMUNICATION_STANDARD.RESPONSE_CLIENT_LIST:
-                    
+
                     break;
                 default:
                     break;

@@ -1,0 +1,11 @@
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\bin\Debug\DeviceThermostat.exe
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\bin\Debug\DeviceThermostat.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\bin\Debug\libdeviceui.dll
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\bin\Debug\libdevicecomm.dll
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\bin\Debug\libdeviceui.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\bin\Debug\libdevicecomm.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\obj\x86\Debug\DeviceThermostat.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\obj\x86\Debug\DeviceThermostat.Properties.Resources.resources
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\obj\x86\Debug\DeviceThermostat.csproj.GenerateResource.Cache
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\obj\x86\Debug\DeviceThermostat.exe
+D:\Users\Cheong\Desktop\vs2010\DeviceThermostat\obj\x86\Debug\DeviceThermostat.pdb

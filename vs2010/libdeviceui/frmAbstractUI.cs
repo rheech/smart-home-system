@@ -25,17 +25,37 @@ namespace libdeviceui
             //cp.StartCommunication();
         }
 
+        public virtual void SetSizeDefault(Form form)
+        {
+            form.Size = new Size(400, 350);
+        }
+
         public int DeviceID
         {
             get
             {
-                return cp.DeviceID;
+                try
+                {
+                    return cp.DeviceID;
+                }
+                catch (Exception)
+                {
+                    return 0;
+                }
             }
         }
 
         public void StartCommunication()
         {
-            cp.StartCommunication();
+            Random rnd = new Random();
+            int DeviceID = rnd.Next(0, 65535);
+
+            cp.StartCommunication(DeviceID);
+        }
+
+        public void StartCommunication(int deviceID)
+        {
+            cp.StartCommunication(deviceID);
         }
 
         protected void cp_OnStatusChange(string status)
