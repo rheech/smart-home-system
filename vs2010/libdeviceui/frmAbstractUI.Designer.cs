@@ -80,8 +80,7 @@
             // 
             // frmAbstractUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(384, 312);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
