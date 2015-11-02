@@ -17,5 +17,9 @@ namespace DeviceTester
             System.Threading.Thread.Sleep(50);
             StartCommunication();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

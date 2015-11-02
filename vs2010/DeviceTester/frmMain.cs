@@ -11,6 +11,8 @@ namespace DeviceTester
 {
     public partial class frmMain : libdeviceui.frmDeviceUI
     {
+        // 400x350
+
         public frmMain()
         {
             InitializeComponent();
