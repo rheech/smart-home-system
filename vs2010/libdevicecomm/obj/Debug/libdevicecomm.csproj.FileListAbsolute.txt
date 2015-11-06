@@ -8,3 +8,8 @@ D:\Users\Cheong\Desktop\vs2010\bin\Debug\libdevicecomm.dll
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\libdevicecomm.pdb
 D:\Users\Cheong\Desktop\vs2010\libdevicecomm\obj\Debug\libdevicecomm.dll
 D:\Users\Cheong\Desktop\vs2010\libdevicecomm\obj\Debug\libdevicecomm.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libdevicecomm\obj\Debug\libdevicecomm.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\libdevicecomm.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\libdevicecomm.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libdevicecomm\obj\Debug\libdevicecomm.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libdevicecomm\obj\Debug\libdevicecomm.pdb

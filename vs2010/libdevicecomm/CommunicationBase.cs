@@ -5,6 +5,7 @@ using System.Text;
 using System.Net.Sockets;
 using System.Net;
 using System.Xml.Serialization;
+using libnetsocket;
 
 namespace libdevicecomm
 {
@@ -95,8 +96,9 @@ namespace libdevicecomm
 
         const int BROADCAST_PORT = SocketSettings.BROADCAST_PORT;
 
-        private NetSocket _nsUDPClient, _nsUDPServer, _nsTCPClient, _nsTCPServer;
-        private NetSocket _rcvClient;
+        private NetSocket _nsUDPClient, _nsUDPServer, _nsTCPClient;
+        private TCPServer _nsTCPServer;
+        //private NetSocket _rcvClient;
         //private List<NetSocket> _nsTCPServerClient;
         private CommunicationBaseInfo _myInfo, _leaderInfo;
         private List<CommunicationBaseInfo> _infoList;
@@ -118,7 +120,7 @@ namespace libdevicecomm
             _nsUDPClient = new NetSocket(ProtocolType.Udp);
             _nsUDPServer = new NetSocket(ProtocolType.Udp);
             _nsTCPClient = new NetSocket(ProtocolType.Tcp);
-            _nsTCPServer = new NetSocket(ProtocolType.Tcp);
+            _nsTCPServer = new TCPServer();
 
             _infoList = new List<CommunicationBaseInfo>();
 
@@ -128,11 +130,12 @@ namespace libdevicecomm
             wsTCPServer.OnConnectionRequest += new WinSocket.onConnectionRequest(wsTCPServer_OnConnectionRequest);
             wsTCPServer.OnClose += new WinSocket.onClose(wsTCPServer_OnClose);
             wsTCPClient.OnConnect += new WinSocket.onConnect(wsTCPClient_OnConnect);*/
-            _nsTCPServer.OnConnectionRequest += new NetSocket.cbConnectionRequest(nsTCPServer_OnConnectionRequest);
-            _nsTCPServer.OnDataArrival += new NetSocket.cbDataArrival(nsTCPServer_OnDataArrival);
-            _nsTCPServer.OnClose += new NetSocket.cbClose(nsTCPServer_OnClose);
+            //_nsTCPServer.OnConnectionRequest += new NetSocket.cbConnectionRequest(nsTCPServer_OnConnectionRequest);
+            _nsTCPServer.OnDataArrival += new NetSocket.cbDataArrival(TCPSocket_OnDataArrival);
+            //_nsTCPServer.OnClose += new NetSocket.cbClose(nsTCPServer_OnClose);
+            //_nsTCPServer.OnDataReceived += new TCPServer.cbDataReceived(_nsTCPServer_OnDataReceived);
             _nsTCPClient.OnConnect += new NetSocket.cbConnect(nsTCPClient_OnConnect);
-            _nsTCPClient.OnDataArrival += new NetSocket.cbDataArrival(nsTCPClient_OnDataArrival);
+            _nsTCPClient.OnDataArrival += new NetSocket.cbDataArrival(TCPSocket_OnDataArrival);
         }
 
         private void ConfigureEventCallback()
@@ -149,8 +152,7 @@ namespace libdevicecomm
             iTCPListenPort = NetSocket.GetAvailablePort();
 
             // Listen TCP Server
-            _nsTCPServer.Bind(iTCPListenPort);
-            _nsTCPServer.Listen();
+            _nsTCPServer.Start(iTCPListenPort);
 
             // Print console
             RaiseEventConsoleMessage(String.Format("Listening on port {0}...", iTCPListenPort));
@@ -188,7 +190,7 @@ namespace libdevicecomm
             _nsUDPClient.SendData(CreateMessage(header, data));
         }
 
-        private void nsUDPServer_OnDataArrival(EndPoint remoteEP, byte[] data)
+        private byte[] nsUDPServer_OnDataArrival(EndPoint remoteEP, byte[] data)
         {
             MESSAGE_HEADER header;
             CommunicationBaseInfo cbi = null;
@@ -209,10 +211,13 @@ namespace libdevicecomm
 
                 TranslateMessage(remoteEP, header, cbi);
             }
+
+            return null;
         }
 
-        private void TranslateMessage(EndPoint remoteEP, MESSAGE_HEADER header, CommunicationBaseInfo cbi)
+        private byte[] TranslateMessage(EndPoint remoteEP, MESSAGE_HEADER header, CommunicationBaseInfo cbi)
         {
+            byte[] dataToSend = null;
             IPEndPoint remoteIP = (IPEndPoint)remoteEP;
 
             switch (header.MessageType)
@@ -251,7 +256,7 @@ namespace libdevicecomm
 
                     // Request Client List to the leader
                     RaiseEventConsoleMessage("Requesting client list...");
-                    _rcvClient.SendData(CreateMessage(COMMUNICATION_STANDARD.REQUEST_CLIENT_LIST));
+                    dataToSend = CreateMessage(COMMUNICATION_STANDARD.REQUEST_CLIENT_LIST);
                     //byte[] clientList = CommunicationBaseInfo.Serialize(_infoList);
                     break;
                 case COMMUNICATION_STANDARD.REQUEST_CLIENT_LIST:
@@ -264,16 +269,19 @@ namespace libdevicecomm
                 default:
                     break;
             }
+
+            return dataToSend;
         }
 
-        private void nsTCPServer_OnConnectionRequest(Socket client)
+        /*private void nsTCPServer_OnConnectionRequest(Socket client)
         {
             _rcvClient = new NetSocket(client);
-            _rcvClient.OnDataArrival += new NetSocket.cbDataArrival(nsTCPServer_OnDataArrival);
-        }
+            _rcvClient.OnDataArrival += new NetSocket.cbDataArrival(TCPSocket_OnDataArrival);
+        }*/
 
-        private void nsTCPServer_OnDataArrival(EndPoint remoteEP, byte[] data)
+        private byte[] TCPSocket_OnDataArrival(EndPoint remoteEP, byte[] data)
         {
+            byte[] dataToSend = null;
             MESSAGE_HEADER header;
             CommunicationBaseInfo cbi = null;
 
@@ -292,8 +300,10 @@ namespace libdevicecomm
                     cbi.info.TCPAddress = ipAddress.Address;
                 }
 
-                TranslateMessage(remoteEP, header, cbi);
+                dataToSend = TranslateMessage(remoteEP, header, cbi);
             }
+
+            return dataToSend;
         }
 
         private void nsTCPServer_OnClose()
@@ -306,30 +316,6 @@ namespace libdevicecomm
             byte[] tcpDataToSend;
             tcpDataToSend = CreateMessage(COMMUNICATION_STANDARD.ANSWER_LEADER, _myInfo.Serialize());
             _nsTCPClient.SendData(tcpDataToSend);
-        }
-
-        private void nsTCPClient_OnDataArrival(EndPoint remoteEP, byte[] data)
-        {
-            MESSAGE_HEADER header;
-            CommunicationBaseInfo cbi = null;
-
-            // Fill out remote IP address
-            IPEndPoint ipAddress = (IPEndPoint)remoteEP;
-
-            header = DispatchMessage(ref data);
-
-            // Truncate if it is a self-loop message
-            if (header.MessageFrom != _myInfo.DeviceID)
-            {
-                // Get cbi if exists
-                if (data.Length > 0)
-                {
-                    cbi = CommunicationBaseInfo.FromBinary(data);
-                    cbi.info.TCPAddress = ipAddress.Address;
-                }
-
-                TranslateMessage(remoteEP, header, cbi);
-            }
         }
 
         private void RaiseEventConsoleMessage(string message)

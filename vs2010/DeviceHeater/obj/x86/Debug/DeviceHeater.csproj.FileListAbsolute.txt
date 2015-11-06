@@ -12,3 +12,12 @@ D:\Users\Cheong\Desktop\vs2010\DeviceHeater\obj\x86\Debug\DeviceHeater.csproj.Ge
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceHeater.exe
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceHeater.pdb
 D:\Users\Cheong\Desktop\vs2010\DeviceHeater\obj\x86\Debug\DeviceHeater.frmMain.resources
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceHeater\obj\x86\Debug\DeviceHeater.frmMain.resources
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceHeater\obj\x86\Debug\DeviceHeater.Properties.Resources.resources
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceHeater\obj\x86\Debug\DeviceHeater.csproj.GenerateResource.Cache
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceHeater\obj\x86\Debug\DeviceHeater.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\DeviceHeater.exe.config
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\DeviceHeater.exe
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\DeviceHeater.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceHeater\obj\x86\Debug\DeviceHeater.exe
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceHeater\obj\x86\Debug\DeviceHeater.pdb

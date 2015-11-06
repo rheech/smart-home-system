@@ -1,0 +1,7 @@
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libnetsocket\obj\Debug\libnetsocket.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\bin\Debug\libnetsocket.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\bin\Debug\libnetsocket.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libnetsocket\obj\Debug\libnetsocket.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libnetsocket\obj\Debug\libnetsocket.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\libnetsocket.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\libnetsocket.pdb

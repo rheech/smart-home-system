@@ -1,0 +1,15 @@
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\bin\Debug\ClientEngine_ClientEngine.exe.config
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\bin\Debug\ClientEngine_ClientEngine.exe
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\bin\Debug\ClientEngine_ClientEngine.pdb
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\bin\Debug\SocketGlobal.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\bin\Debug\SuperSocket.ClientEngine.Common.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\bin\Debug\SuperSocket.ClientEngine.Core.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\bin\Debug\SuperSocket.ClientEngine.Protocol.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\bin\Debug\SuperSocket.ClientEngine.Proxy.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\bin\Debug\SocketGlobal.pdb
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\obj\Debug\Client_ClientEngine.csprojResolveAssemblyReference.cache
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\obj\Debug\ClientEngine_ClientEngine.frmClient.resources
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\obj\Debug\ClientEngine_ClientEngine.Properties.Resources.resources
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\obj\Debug\Client_ClientEngine.csproj.GenerateResource.Cache
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\obj\Debug\ClientEngine_ClientEngine.exe
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\ClientEngine_ClientEngine\obj\Debug\ClientEngine_ClientEngine.pdb

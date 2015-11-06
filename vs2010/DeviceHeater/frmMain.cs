@@ -18,7 +18,7 @@ namespace DeviceHeater
             InitializeComponent();
             SetSizeDefault(this);
 
-            System.Threading.Thread.Sleep(100);
+            System.Threading.Thread.Sleep(500);
             StartCommunication(DEVICE_ID);
         }
     }

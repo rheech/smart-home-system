@@ -1,0 +1,9 @@
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\Common\bin\Debug\SuperSocket.Common.XML
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\Common\bin\Debug\SuperSocket.Common.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\Common\bin\Debug\SuperSocket.Common.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\Common\bin\Debug\log4net.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.Common.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.Common.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\Common\obj\Debug\SuperSocket.Common.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\Common\obj\Debug\SuperSocket.Common.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.Common.XML
