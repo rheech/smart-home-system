@@ -12,3 +12,12 @@ D:\Users\Cheong\Desktop\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.cspro
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceVerifier.exe
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceVerifier.pdb
 D:\Users\Cheong\Desktop\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.frmMain.resources
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.frmMain.resources
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.Properties.Resources.resources
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.csproj.GenerateResource.Cache
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\DeviceVerifier.exe.config
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\DeviceVerifier.exe
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\DeviceVerifier.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.exe
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\DeviceVerifier\obj\x86\Debug\DeviceVerifier.pdb

@@ -1,0 +1,19 @@
+C:\Users\Persephone\documents\visual studio 2012\Projects\Socket_Test\SocketGlobal\bin\Debug\SocketGlobal.dll
+C:\Users\Persephone\documents\visual studio 2012\Projects\Socket_Test\SocketGlobal\bin\Debug\SocketGlobal.pdb
+C:\Users\Persephone\documents\visual studio 2012\Projects\Socket_Test\SocketGlobal\obj\Debug\SocketGlobal.csprojResolveAssemblyReference.cache
+C:\Users\Persephone\documents\visual studio 2012\Projects\Socket_Test\SocketGlobal\obj\Debug\SocketGlobal.dll
+C:\Users\Persephone\documents\visual studio 2012\Projects\Socket_Test\SocketGlobal\obj\Debug\SocketGlobal.pdb
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Test\SocketGlobal\bin\Debug\SocketGlobal.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Test\SocketGlobal\bin\Debug\SocketGlobal.pdb
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Test\SocketGlobal\obj\Debug\SocketGlobal.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Test\SocketGlobal\obj\Debug\SocketGlobal.pdb
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\SocketGlobal\bin\Debug\SocketGlobal.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\SocketGlobal\bin\Debug\SocketGlobal.pdb
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\SocketGlobal\obj\Debug\SocketGlobal.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\SocketGlobal\obj\Debug\SocketGlobal.pdb
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\SocketGlobal\obj\Debug\SocketGlobal.csprojResolveAssemblyReference.cache
+D:\Downloads\SuperSocket_Chatting_20150101\SocketGlobal\bin\Debug\SocketGlobal.dll
+D:\Downloads\SuperSocket_Chatting_20150101\SocketGlobal\bin\Debug\SocketGlobal.pdb
+D:\Downloads\SuperSocket_Chatting_20150101\SocketGlobal\obj\Debug\SocketGlobal.csprojResolveAssemblyReference.cache
+D:\Downloads\SuperSocket_Chatting_20150101\SocketGlobal\obj\Debug\SocketGlobal.dll
+D:\Downloads\SuperSocket_Chatting_20150101\SocketGlobal\obj\Debug\SocketGlobal.pdb

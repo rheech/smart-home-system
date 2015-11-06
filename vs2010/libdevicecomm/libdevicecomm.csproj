@@ -44,9 +44,14 @@
     <Compile Include="CommunicationBaseInfo.cs" />
     <Compile Include="CommunicationProtocol.cs" />
     <Compile Include="CommunicationSerializable.cs" />
-    <Compile Include="NetSocket.cs" />
     <Compile Include="SocketSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libnetsocket\libnetsocket.csproj">
+      <Project>{1C137CC3-DBBF-469B-BC14-DAAF3A75E197}</Project>
+      <Name>libnetsocket</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

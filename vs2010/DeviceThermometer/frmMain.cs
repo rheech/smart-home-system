@@ -18,8 +18,8 @@ namespace DeviceThermometer
             InitializeComponent();
             SetSizeDefault(this);
 
-            //System.Threading.Thread.Sleep(1500);
-            //StartCommunication(DEVICE_ID);
+            System.Threading.Thread.Sleep(500);
+            StartCommunication(DEVICE_ID);
         }
     }
 }

@@ -1,0 +1,10 @@
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\Config\log4net.config
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\Config\log4net.unix.config
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\supersocket.sh
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\supersocket.cmd
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.SocketService.exe.config
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.SocketService.exe
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.SocketService.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketService\obj\Debug\SuperSocket.SocketService.Net40.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketService\obj\Debug\SuperSocket.SocketService.exe
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketService\obj\Debug\SuperSocket.SocketService.pdb
