@@ -1,0 +1,14 @@
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\bin\Debug\DeviceThermometer.exe
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\bin\Debug\DeviceThermometer.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\bin\Debug\libdeviceui.dll
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\bin\Debug\libdevicecomm.dll
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\bin\Debug\libdeviceui.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\bin\Debug\libdevicecomm.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\obj\x86\Debug\DeviceThermometer.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\obj\x86\Debug\DeviceThermometer.Properties.Resources.resources
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\obj\x86\Debug\DeviceThermometer.csproj.GenerateResource.Cache
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\obj\x86\Debug\DeviceThermometer.exe
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\obj\x86\Debug\DeviceThermometer.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\obj\x86\Debug\DeviceThermometer.frmMain.resources
+D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceThermometer.exe
+D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceThermometer.pdb

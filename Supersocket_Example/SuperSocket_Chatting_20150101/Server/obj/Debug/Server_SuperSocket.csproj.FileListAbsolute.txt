@@ -1,0 +1,51 @@
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\Server.exe.config
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\Server.exe
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\Server.pdb
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\log4net.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\SocketGlobal.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\SuperSocket.Common.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\SuperSocket.Facility.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\SuperSocket.SocketBase.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\SuperSocket.SocketEngine.dll
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\SocketGlobal.pdb
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\bin\Debug\SuperSocket.Facility.xml
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\obj\Debug\Server_SuperSocket.csprojResolveAssemblyReference.cache
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\obj\Debug\Server.frmServer.resources
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\obj\Debug\Server_SuperSocket.csproj.GenerateResource.Cache
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\obj\Debug\Server.exe
+C:\Users\Persephone\Documents\Visual Studio 2012\Projects\SuperSocket_Chatting\Server\obj\Debug\Server.pdb
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\Server.exe.config
+D:\Downloads\SuperSocket_Chatting_20150101\Server\obj\Debug\Server.exe
+D:\Downloads\SuperSocket_Chatting_20150101\Server\obj\Debug\Server.pdb
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\Server.exe
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\Server.pdb
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\log4net.dll
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\SocketGlobal.dll
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\SuperSocket.Common.dll
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\SuperSocket.Facility.dll
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\SuperSocket.SocketBase.dll
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\SuperSocket.SocketEngine.dll
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\SocketGlobal.pdb
+D:\Downloads\SuperSocket_Chatting_20150101\Server\bin\Debug\SuperSocket.Facility.xml
+D:\Downloads\SuperSocket_Chatting_20150101\Server\obj\Debug\Server_SuperSocket.csprojResolveAssemblyReference.cache
+D:\Downloads\SuperSocket_Chatting_20150101\Server\obj\Debug\Server.frmServer.resources
+D:\Downloads\SuperSocket_Chatting_20150101\Server\obj\Debug\Server.Properties.Resources.resources
+D:\Downloads\SuperSocket_Chatting_20150101\Server\obj\Debug\Server_SuperSocket.csproj.GenerateResource.Cache
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\Server.exe.config
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\obj\Debug\Server.exe
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\obj\Debug\Server.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\Server.exe
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\Server.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\log4net.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\SocketGlobal.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\SuperSocket.Common.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\SuperSocket.Facility.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\SuperSocket.SocketBase.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\SuperSocket.SocketEngine.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\SocketGlobal.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\bin\Debug\SuperSocket.Facility.xml
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\obj\Debug\Server_SuperSocket.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\obj\Debug\Server.frmServer.resources
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\obj\Debug\Server.Properties.Resources.resources
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\Supersocket_Example\SuperSocket_Chatting_20150101\Server\obj\Debug\Server_SuperSocket.csproj.GenerateResource.Cache

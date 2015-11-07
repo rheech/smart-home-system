@@ -1,0 +1,11 @@
+﻿2015-11-07 14:19:17,293 [6864] ERROR SuperSockServer-28068188 - Session: 9990523c-92c4-4f62-8310-57275315d175/127.0.0.1:15830
+Max request length: 1024, current processed length: 1024
+2015-11-07 20:54:06,729 [2044] ERROR SocketServer-45592480 - receiveFilterFactory is required!
+2015-11-07 21:21:37,878 [1116] ERROR SocketServer-45592480 - receiveFilterFactory is required!
+2015-11-07 21:23:08,780 [9476] ERROR SocketServer-15645912 - receiveFilterFactory is required!
+2015-11-07 21:23:50,712 [7088] ERROR SocketServer-45592480 - receiveFilterFactory is required!
+2015-11-07 21:24:27,124 [6904] ERROR SocketServer-45592480 - receiveFilterFactory is required!
+2015-11-07 21:25:14,951 [6612] ERROR SocketServer-45592480 - receiveFilterFactory is required!
+2015-11-07 21:25:52,922 [1092] ERROR SocketServer-9008175 - receiveFilterFactory is required!
+2015-11-07 21:26:40,300 [8464] ERROR SocketServer-9008175 - receiveFilterFactory is required!
+2015-11-07 21:28:01,121 [9356] ERROR SocketServer-9008175 - receiveFilterFactory is required!
