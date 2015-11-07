@@ -1,4 +1,0 @@
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\SocketTest\SocketTest\obj\x86\Debug\SocketTest.csprojResolveAssemblyReference.cache
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\SocketTest\SocketTest\obj\x86\Debug\SocketTest.Form1.resources
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\SocketTest\SocketTest\obj\x86\Debug\SocketTest.Properties.Resources.resources
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\SocketTest\SocketTest\obj\x86\Debug\SocketTest.csproj.GenerateResource.Cache
