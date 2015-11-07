@@ -1,6 +1,0 @@
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.SocketBase.dll
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.SocketBase.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketBase\obj\Debug\SuperSocket.SocketBase.Net40.csprojResolveAssemblyReference.cache
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketBase\obj\Debug\SuperSocket.SocketBase.dll
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketBase\obj\Debug\SuperSocket.SocketBase.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.SocketBase.XML
