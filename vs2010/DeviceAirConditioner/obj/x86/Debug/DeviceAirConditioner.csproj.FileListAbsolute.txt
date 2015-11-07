@@ -1,0 +1,14 @@
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceAirConditioner\bin\Debug\DeviceAirConditioner.exe
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceAirConditioner\bin\Debug\DeviceAirConditioner.pdb
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceAirConditioner\bin\Debug\libdeviceui.dll
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceAirConditioner\bin\Debug\libdevicecomm.dll
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceAirConditioner\bin\Debug\libdeviceui.pdb
+D:\Users\Cheong\Desktop\Smart\vs2010\DeviceAirConditioner\bin\Debug\libdevicecomm.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceAirConditioner\obj\x86\Debug\DeviceAirConditioner.exe
+D:\Users\Cheong\Desktop\vs2010\DeviceAirConditioner\obj\x86\Debug\DeviceAirConditioner.pdb
+D:\Users\Cheong\Desktop\vs2010\DeviceAirConditioner\obj\x86\Debug\DeviceAirConditioner.csprojResolveAssemblyReference.cache
+D:\Users\Cheong\Desktop\vs2010\DeviceAirConditioner\obj\x86\Debug\DeviceAirConditioner.frmMain.resources
+D:\Users\Cheong\Desktop\vs2010\DeviceAirConditioner\obj\x86\Debug\DeviceAirConditioner.Properties.Resources.resources
+D:\Users\Cheong\Desktop\vs2010\DeviceAirConditioner\obj\x86\Debug\DeviceAirConditioner.csproj.GenerateResource.Cache
+D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceAirConditioner.exe
+D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceAirConditioner.pdb

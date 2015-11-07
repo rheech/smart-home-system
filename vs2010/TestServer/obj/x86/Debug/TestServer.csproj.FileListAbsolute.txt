@@ -1,0 +1,3 @@
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\bin\Debug\TestServer.exe.config
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\bin\Debug\TestServer.exe
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\bin\Debug\TestServer.pdb

@@ -1,0 +1,2 @@
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\bin\Debug\libnetsocket.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\bin\Debug\libnetsocket.pdb
