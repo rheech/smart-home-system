@@ -12,3 +12,4 @@ D:\Users\Cheong\Desktop\vs2010\DeviceHeater\obj\x86\Debug\DeviceHeater.csproj.Ge
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceHeater.exe
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceHeater.pdb
 D:\Users\Cheong\Desktop\vs2010\DeviceHeater\obj\x86\Debug\DeviceHeater.frmMain.resources
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\DeviceHeater.exe.config
