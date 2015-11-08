@@ -1,4 +1,0 @@
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.Agent.exe
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.Agent.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\Agent\obj\Debug\SuperSocket.Agent.exe
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\Agent\obj\Debug\SuperSocket.Agent.pdb

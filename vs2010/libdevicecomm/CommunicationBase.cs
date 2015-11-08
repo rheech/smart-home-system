@@ -13,24 +13,24 @@ using libnetsocket.Common;
 namespace libdevicecomm
 {
     #region Message Standard
-    public class MESSAGE_HEADER
+    public class ENVELOPE_HEADER
     {
         public int MessageFrom;
         public int TargetLevel;
-        public COMMUNICATION_STANDARD MessageType;
+        public ENVELOPE_DIRECTIVE MessageType;
 
-        public MESSAGE_HEADER()
+        public ENVELOPE_HEADER()
         {
         }
 
-        public MESSAGE_HEADER(COMMUNICATION_STANDARD MessageType, int MessageFrom)
+        public ENVELOPE_HEADER(ENVELOPE_DIRECTIVE MessageType, int MessageFrom)
         {
 
         }
 
-        public static MESSAGE_HEADER FromBinary(byte[] data)
+        public static ENVELOPE_HEADER FromBinary(byte[] data)
         {
-            MESSAGE_HEADER messageHeader = new MESSAGE_HEADER();
+            ENVELOPE_HEADER messageHeader = new ENVELOPE_HEADER();
             int offset = 0;
             byte[] bMessageFrom, bTargetLevel, bMessageType;
             
@@ -49,7 +49,7 @@ namespace libdevicecomm
 
             messageHeader.MessageFrom = BitConverter.ToInt32(bMessageFrom, 0);
             messageHeader.TargetLevel = BitConverter.ToInt32(bTargetLevel, 0);
-            messageHeader.MessageType = (COMMUNICATION_STANDARD)BitConverter.ToInt32(bMessageType, 0);
+            messageHeader.MessageType = (ENVELOPE_DIRECTIVE)BitConverter.ToInt32(bMessageType, 0);
 
             return messageHeader;
         }
@@ -89,14 +89,14 @@ namespace libdevicecomm
         }
     }
 
-    public enum COMMUNICATION_STANDARD
+    public enum ENVELOPE_DIRECTIVE
     {
         FIND_LEADER,
         ANSWER_LEADER,
         LEADER_CHANGED,
         REQUEST_CLIENT_LIST,
         RESPONSE_CLIENT_LIST,
-        PROTOCOL_LEVEL_MESSAGE
+        LV3_MESSAGE
     }
     #endregion
 
@@ -118,13 +118,13 @@ namespace libdevicecomm
 
         const int BROADCAST_PORT = SocketSettings.BROADCAST_PORT;
 
-        private UDPClient _nsUDPClient;
-        private UDPServer _nsUDPServer;
-        private TCPClient _nsTCPClient;
-        private TCPServer _nsTCPServer;
+        protected UDPClient _nsUDPClient;
+        protected UDPServer _nsUDPServer;
+        protected TCPClient _nsTCPClient;
+        protected TCPServer _nsTCPServer;
         //private NetSocket _rcvClient;
         //private List<NetSocket> _nsTCPServerClient;
-        private CommunicationBaseInfo _myInfo, _leaderInfo;
+        protected CommunicationBaseInfo _myInfo, _leaderInfo;
         protected List<CommunicationBaseInfo> _infoList;
 
         // http://stackoverflow.com/questions/1212742/xml-serialize-generic-list-of-serializable-objects (Serialize List)
@@ -181,8 +181,14 @@ namespace libdevicecomm
 
             // Configure myInfo
             //_myInfo.info.isLeader = true;
+
             _myInfo.NodeData.TCPListenPort = iTCPListenPort;
-            //_infoList.Add(_myInfo);
+
+            // temporary
+            _myInfo.NodeData.TCPAddress = GetLocalIPAddress();
+
+            // Add my info (leader)
+            _infoList.Add(_myInfo);
             _leaderInfo = _myInfo;
 
             RaiseEventConsoleMessage("Configuring my info...");
@@ -202,7 +208,7 @@ namespace libdevicecomm
             header.MessageType = COMMUNICATION_STANDARD.FIND_LEADER;
             header.MessageFrom = _myInfo.DeviceID;*/
 
-            SendBroadcast(COMMUNICATION_STANDARD.FIND_LEADER, data);
+            SendBroadcast(ENVELOPE_DIRECTIVE.FIND_LEADER, data);
 
             RaiseEventConsoleMessage("Sending broadcast.");
 
@@ -214,7 +220,7 @@ namespace libdevicecomm
         #endregion
 
         #region TCP/IP Based Communication
-        private byte[] TranslateMessage(IPEndPoint remoteEP, MESSAGE_HEADER header, byte[] data)
+        private byte[] TranslateMessage(IPEndPoint remoteEP, ENVELOPE_HEADER header, byte[] data)
         {
             CommunicationBaseInfo cbi = null;
 
@@ -222,23 +228,27 @@ namespace libdevicecomm
             if (header.TargetLevel == 0)
             {
                 cbi = CommunicationBaseInfo.FromBinary(data);
-                TranslateMessage_Base(remoteEP, header, cbi);
+                TranslateMessage_lv1(remoteEP, header, cbi);
             }
             else if (header.TargetLevel == 1)
             {
-                return TranslateMessage_Upper(remoteEP, header, data);
+                return TranslateMessage_lv2(remoteEP, header, data);
+            }
+            else if (header.TargetLevel == 2)
+            {
+                return OnDataArrival_lv3(remoteEP, header, data);
             }
 
             return null;
         }
 
-        private void TranslateMessage_Base(IPEndPoint remoteEP, MESSAGE_HEADER header, CommunicationBaseInfo cbi)
+        private void TranslateMessage_lv1(IPEndPoint remoteEP, ENVELOPE_HEADER header, CommunicationBaseInfo cbi)
         {
             byte[] dataToSend = null;
 
             switch (header.MessageType)
             {
-                case COMMUNICATION_STANDARD.FIND_LEADER: // Find leader from newbie (UDP)
+                case ENVELOPE_DIRECTIVE.FIND_LEADER: // Find leader from newbie (UDP)
                     RaiseEventConsoleMessage(String.Format("Received broadcast from {0}. IP address is {1}.", cbi.DeviceID, remoteEP.Address.ToString()));
 
                     // Add newbie to the list
@@ -256,11 +266,11 @@ namespace libdevicecomm
                         //SendBroadcast(COMMUNICATION_STANDARD.ANSWER_LEADER, _myInfo.Serialize());
 
                         _nsTCPClient.Close();
-                        _nsTCPClient.SendDataAfterConnect(CreateMessage(COMMUNICATION_STANDARD.ANSWER_LEADER, 0, _myInfo.Serialize()));
+                        _nsTCPClient.SendDataAfterConnect(CreateEnvelope(ENVELOPE_DIRECTIVE.ANSWER_LEADER, 0, _myInfo.Serialize()));
                         _nsTCPClient.Connect(remoteEP.Address, cbi.NodeData.TCPListenPort);
                     }
                     break;
-                case COMMUNICATION_STANDARD.ANSWER_LEADER: // Answer from leader (UDP)
+                case ENVELOPE_DIRECTIVE.ANSWER_LEADER: // Answer from leader (UDP)
                     // Found leader
                     RaiseEventStatusChange(String.Format("Follower (Current ID: {0})", DeviceID));
                     RaiseEventConsoleMessage("Found a leader. Changing status to a follower.");
@@ -269,7 +279,7 @@ namespace libdevicecomm
                     if (!isLeader)
                     {
                         RaiseEventConsoleMessage("Broadcasting leader change info.");
-                        SendBroadcast(COMMUNICATION_STANDARD.LEADER_CHANGED, _leaderInfo.Serialize());
+                        SendBroadcast(ENVELOPE_DIRECTIVE.LEADER_CHANGED, _leaderInfo.Serialize());
                     }
 
                     //_myInfo.info.isLeader = false;
@@ -284,14 +294,14 @@ namespace libdevicecomm
 
                     // Request Client List to the leader
                     RaiseEventConsoleMessage("Requesting client list...");
-                    dataToSend = CreateMessage(COMMUNICATION_STANDARD.REQUEST_CLIENT_LIST, 1);
+                    dataToSend = CreateEnvelope(ENVELOPE_DIRECTIVE.REQUEST_CLIENT_LIST, 1);
 
                     _nsTCPClient.Close();
                     _nsTCPClient.SendDataAfterConnect(dataToSend);
                     _nsTCPClient.Connect(remoteEP.Address, _leaderInfo.NodeData.TCPListenPort);
                     //byte[] clientList = CommunicationBaseInfo.Serialize(_infoList);
                     break;
-                case COMMUNICATION_STANDARD.LEADER_CHANGED:
+                case ENVELOPE_DIRECTIVE.LEADER_CHANGED:
                     RaiseEventConsoleMessage("Found a new leader. Verifying info...");
 
                     if (isLeader)
@@ -306,28 +316,27 @@ namespace libdevicecomm
                         _leaderInfo = cbi;
                         _leaderInfo.NodeData.TCPAddress = remoteEP.Address;
                     }
-
                     break;
                 default:
                     break;
             }
         }
 
-        private byte[] TranslateMessage_Upper(IPEndPoint remoteEP, MESSAGE_HEADER header, byte[] data)
+        private byte[] TranslateMessage_lv2(IPEndPoint remoteEP, ENVELOPE_HEADER header, byte[] data)
         {
             byte[] dataToSend = null;
 
             switch (header.MessageType)
             {
-                case COMMUNICATION_STANDARD.REQUEST_CLIENT_LIST:
+                case ENVELOPE_DIRECTIVE.REQUEST_CLIENT_LIST:
                     byte[] tempData;
                     tempData = SerializeClientList(_infoList);
 
-                    dataToSend = CreateMessage(COMMUNICATION_STANDARD.RESPONSE_CLIENT_LIST, 1, tempData);
+                    dataToSend = CreateEnvelope(ENVELOPE_DIRECTIVE.RESPONSE_CLIENT_LIST, 1, tempData);
                     /*_nsTCPClient.SendData(CreateMessage(COMMUNICATION_STANDARD.RESPONSE_CLIENT_LIST,
                                     CommunicationBaseInfo.Serialize(_infoList)));*/
                     break;
-                case COMMUNICATION_STANDARD.RESPONSE_CLIENT_LIST:
+                case ENVELOPE_DIRECTIVE.RESPONSE_CLIENT_LIST:
                     _infoList = DeserializeClientList(data);
                     RaiseEventConsoleMessage("Received client list from {0}.", header.MessageFrom);
 
@@ -337,6 +346,11 @@ namespace libdevicecomm
             }
 
             return dataToSend;
+        }
+
+        protected virtual byte[] OnDataArrival_lv3(IPEndPoint remoteEP, ENVELOPE_HEADER header, byte[] data)
+        {
+            throw new NotImplementedException("Lv3 method is not implemented in this class.");
         }
 
         private static byte[] SerializeClientList(List<CommunicationBaseInfo> infoList)
@@ -358,15 +372,15 @@ namespace libdevicecomm
             return cbi_list.baseInfo;
         }
 
-        private void SendBroadcast(COMMUNICATION_STANDARD messageType)
+        private void SendBroadcast(ENVELOPE_DIRECTIVE messageType)
         {
             SendBroadcast(messageType, null);
         }
 
-        private void SendBroadcast(COMMUNICATION_STANDARD messageType, byte[] data)
+        private void SendBroadcast(ENVELOPE_DIRECTIVE messageType, byte[] data)
         {
             //_nsUDPClient.Connect("255.255.255.255", SocketSettings.BROADCAST_PORT);
-            _nsUDPClient.Send(CreateMessage(messageType, 0, data));
+            _nsUDPClient.Send(CreateEnvelope(messageType, 0, data));
         }
 
         private void nsTCPClient_OnConnect()
@@ -376,9 +390,9 @@ namespace libdevicecomm
 
         private byte[] nsUDPServer_OnDataArrival(IPEndPoint remoteEP, byte[] data)
         {
-            MESSAGE_HEADER header;
+            ENVELOPE_HEADER header;
 
-            header = DispatchMessage(ref data);
+            header = DispatchEnvelope(ref data);
 
             // Truncate if it is a self-loop message
             if (header.MessageFrom != _myInfo.DeviceID)
@@ -392,12 +406,12 @@ namespace libdevicecomm
         private byte[] TCPServer_OnDataArrival(IPEndPoint remoteEP, byte[] data)
         {
             byte[] dataToSend = null;
-            MESSAGE_HEADER header;
+            ENVELOPE_HEADER header;
 
             // Fill out remote IP address
             IPEndPoint ipAddress = (IPEndPoint)remoteEP;
 
-            header = DispatchMessage(ref data);
+            header = DispatchEnvelope(ref data);
 
             // Truncate if it is a self-loop message
             if (header.MessageFrom != _myInfo.DeviceID)
@@ -407,92 +421,46 @@ namespace libdevicecomm
 
             return dataToSend;
         }
-        #endregion
 
-        #region DeviceID Based Communication
-        protected IPEndPoint GetAddressByID(int deviceID)
+        private static IPAddress GetLocalIPAddress()
         {
-            foreach (CommunicationBaseInfo info in _infoList)
+            if (!System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable())
             {
-                if (info.DeviceID == deviceID)
-                {
-                    return new IPEndPoint(info.NodeData.TCPAddress, info.NodeData.TCPListenPort);
-                }
+                return null;
             }
 
-            return null;
-        }
+            IPHostEntry host = Dns.GetHostEntry(Dns.GetHostName());
 
-        protected int GetLeaderID()
-        {
-            if (_leaderInfo != null && !isLeader)
-            {
-                return _leaderInfo.DeviceID;
-            }
-
-            return -1;
-        }
-
-        protected IPEndPoint GetLeaderAddress()
-        {
-            if (_leaderInfo != null && !isLeader)
-            {
-                return new IPEndPoint(_leaderInfo.NodeData.TCPAddress, _leaderInfo.NodeData.TCPListenPort);
-            }
-
-            return null;
-        }
-
-        protected void SendDataByID(int deviceID, byte[] data)
-        {
-            IPEndPoint remoteEP;
-
-            remoteEP = GetAddressByID(deviceID);
-
-            if (remoteEP != null)
-            {
-                _nsTCPClient.SendDataAfterConnect(CreateMessage(COMMUNICATION_STANDARD.PROTOCOL_LEVEL_MESSAGE, 1, data));
-                _nsTCPClient.Connect(remoteEP);
-            }
-            else
-            {
-                throw new Exception("Nonexistent ID.");
-            }
-        }
-
-        public List<CommunicationBaseInfo> DeviceList
-        {
-            get
-            {
-                return _infoList;
-            }
+            return host
+                .AddressList
+                .FirstOrDefault(ip => ip.AddressFamily == AddressFamily.InterNetwork);
         }
         #endregion
 
-        #region Message Standard
+        #region Envelope Standard
 
-        private byte[] CreateMessage(COMMUNICATION_STANDARD standard, int targetLevel)
+        protected byte[] CreateEnvelope(ENVELOPE_DIRECTIVE standard, int targetLevel)
         {
-            return CreateMessage(standard, targetLevel, null);
+            return CreateEnvelope(standard, targetLevel, null);
         }
 
-        private byte[] CreateMessage(COMMUNICATION_STANDARD standard, int targetLevel, byte[] data)
+        protected byte[] CreateEnvelope(ENVELOPE_DIRECTIVE standard, int targetLevel, byte[] data)
         {
-            MESSAGE_HEADER header = new MESSAGE_HEADER();
+            ENVELOPE_HEADER header = new ENVELOPE_HEADER();
 
             header.MessageFrom = _myInfo.DeviceID;
             header.MessageType = standard;
             header.TargetLevel = targetLevel;
 
-            return CreateMessage(header, data);
+            return CreateEnvelope(header, data);
         }
 
-        private static byte[] CreateMessage(MESSAGE_HEADER header, byte[] data)
+        protected static byte[] CreateEnvelope(ENVELOPE_HEADER header, byte[] data)
         {
             byte[] headerData, totalData;
             int headerSize, dataSize = 0;
 
-            headerSize = MESSAGE_HEADER.Size;
+            headerSize = ENVELOPE_HEADER.Size;
 
             if (data != null)
             {
@@ -512,11 +480,11 @@ namespace libdevicecomm
             return totalData;
         }
 
-        private static MESSAGE_HEADER DispatchMessage(ref byte[] data)
+        private static ENVELOPE_HEADER DispatchEnvelope(ref byte[] data)
         {
-            MESSAGE_HEADER header = new MESSAGE_HEADER();
+            ENVELOPE_HEADER header = new ENVELOPE_HEADER();
 
-            int headerSize = MESSAGE_HEADER.Size;
+            int headerSize = ENVELOPE_HEADER.Size;
             int trailerSize = data.Length - headerSize;
 
             byte[] headerData = new byte[headerSize];
@@ -528,7 +496,7 @@ namespace libdevicecomm
             data = new byte[trailerData.Length];
             Array.Copy(trailerData, data, trailerData.Length);
 
-            header = MESSAGE_HEADER.FromBinary(headerData);
+            header = ENVELOPE_HEADER.FromBinary(headerData);
 
             return header;
         }

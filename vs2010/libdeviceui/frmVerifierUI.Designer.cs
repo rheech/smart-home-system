@@ -1,6 +1,6 @@
 ﻿namespace libdeviceui
 {
-    partial class frmVerifierUI : frmAbstractUI
+    partial class frmVerifierUI : frmDeviceUI
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.txtLogConsole = new libdeviceui.cptConsoleTextBox(this.components);
-            this.tabMain = new System.Windows.Forms.TabControl();
-            this.tabPageLog = new System.Windows.Forms.TabPage();
             this.tabPageVerification = new System.Windows.Forms.TabPage();
             this.btnInsert = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,42 +38,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabMain.SuspendLayout();
-            this.tabPageLog.SuspendLayout();
             this.tabPageVerification.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtLogConsole
+            // tabSystemStatus
             // 
-            this.txtLogConsole.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtLogConsole.Location = new System.Drawing.Point(3, 3);
-            this.txtLogConsole.Multiline = true;
-            this.txtLogConsole.Name = "txtLogConsole";
-            this.txtLogConsole.ReadOnly = true;
-            this.txtLogConsole.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLogConsole.Size = new System.Drawing.Size(534, 376);
-            this.txtLogConsole.TabIndex = 3;
+            this.tabSystemStatus.Size = new System.Drawing.Size(540, 382);
             // 
             // tabMain
             // 
-            this.tabMain.Controls.Add(this.tabPageLog);
             this.tabMain.Controls.Add(this.tabPageVerification);
-            this.tabMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabMain.Location = new System.Drawing.Point(0, 24);
-            this.tabMain.Name = "tabMain";
-            this.tabMain.SelectedIndex = 0;
             this.tabMain.Size = new System.Drawing.Size(548, 408);
-            this.tabMain.TabIndex = 4;
-            // 
-            // tabPageLog
-            // 
-            this.tabPageLog.Controls.Add(this.txtLogConsole);
-            this.tabPageLog.Location = new System.Drawing.Point(4, 22);
-            this.tabPageLog.Name = "tabPageLog";
-            this.tabPageLog.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageLog.Size = new System.Drawing.Size(540, 382);
-            this.tabPageLog.TabIndex = 0;
-            this.tabPageLog.Text = "Log";
-            this.tabPageLog.UseVisualStyleBackColor = true;
+            this.tabMain.Controls.SetChildIndex(this.tabPageVerification, 0);
+            this.tabMain.Controls.SetChildIndex(this.tabSystemStatus, 0);
             // 
             // tabPageVerification
             // 
@@ -93,7 +66,7 @@
             this.tabPageVerification.Name = "tabPageVerification";
             this.tabPageVerification.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageVerification.Size = new System.Drawing.Size(540, 382);
-            this.tabPageVerification.TabIndex = 1;
+            this.tabPageVerification.TabIndex = 3;
             this.tabPageVerification.Text = "Verifier";
             this.tabPageVerification.UseVisualStyleBackColor = true;
             // 
@@ -105,7 +78,6 @@
             this.btnInsert.TabIndex = 12;
             this.btnInsert.Text = "&Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // label3
             // 
@@ -177,15 +149,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 454);
-            this.Controls.Add(this.tabMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
             this.Name = "frmVerifierUI";
             this.Text = "frmVerificationServer";
             this.Load += new System.EventHandler(this.frmVerifierUI_Load);
-            this.Controls.SetChildIndex(this.tabMain, 0);
             this.tabMain.ResumeLayout(false);
-            this.tabPageLog.ResumeLayout(false);
-            this.tabPageLog.PerformLayout();
             this.tabPageVerification.ResumeLayout(false);
             this.tabPageVerification.PerformLayout();
             this.ResumeLayout(false);
@@ -195,10 +163,8 @@
 
         #endregion
 
-        private cptConsoleTextBox txtLogConsole;
-        private System.Windows.Forms.TabControl tabMain;
-        private System.Windows.Forms.TabPage tabPageLog;
         private System.Windows.Forms.TabPage tabPageVerification;
+        private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox lstOverview;
         private System.Windows.Forms.TextBox txtQuery;
@@ -206,6 +172,6 @@
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnInsert;
+
     }
 }

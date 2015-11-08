@@ -1,12 +1,3 @@
 D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\bin\Debug\TestServer.exe.config
 D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\bin\Debug\TestServer.exe
 D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\bin\Debug\TestServer.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\TestServer.exe.config
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\TestServer.exe
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\TestServer.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\TestServer\obj\x86\Debug\TestServer.csprojResolveAssemblyReference.cache
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\TestServer\obj\x86\Debug\TestServer.Form1.resources
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\TestServer\obj\x86\Debug\TestServer.Properties.Resources.resources
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\TestServer\obj\x86\Debug\TestServer.csproj.GenerateResource.Cache
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\TestServer\obj\x86\Debug\TestServer.exe
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\TestServer\obj\x86\Debug\TestServer.pdb

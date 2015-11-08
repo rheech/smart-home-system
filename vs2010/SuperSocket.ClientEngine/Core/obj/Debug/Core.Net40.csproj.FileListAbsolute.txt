@@ -1,7 +1,0 @@
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Core\bin\Debug\SuperSocket.ClientEngine.Core.dll
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Core\bin\Debug\SuperSocket.ClientEngine.Core.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Core\bin\Debug\SuperSocket.ClientEngine.Common.dll
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Core\bin\Debug\SuperSocket.ClientEngine.Common.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Core\obj\Debug\Core.Net40.csprojResolveAssemblyReference.cache
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Core\obj\Debug\SuperSocket.ClientEngine.Core.dll
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Core\obj\Debug\SuperSocket.ClientEngine.Core.pdb
