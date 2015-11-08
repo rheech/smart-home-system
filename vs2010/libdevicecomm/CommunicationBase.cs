@@ -111,10 +111,12 @@ namespace libdevicecomm
         //    3-2. Send information if you are a leader, and update list
 
         #region Variable declaration
-        public delegate void onStatusChange(string state);
-        public delegate void onConsoleMessage(string message);
-        public event onStatusChange OnStatusChange;
-        public event onConsoleMessage OnConsoleMessage;
+        public delegate void cbStatusChange(string state);
+        public delegate void cbConsoleMessage(string message);
+        public delegate void cbDeviceListUpdate();
+        public event cbStatusChange OnStatusChange;
+        public event cbConsoleMessage OnConsoleMessage;
+        public event cbDeviceListUpdate OnDeviceListUpdate;
 
         const int BROADCAST_PORT = SocketSettings.BROADCAST_PORT;
 
@@ -269,6 +271,11 @@ namespace libdevicecomm
                         _nsTCPClient.SendDataAfterConnect(CreateEnvelope(ENVELOPE_DIRECTIVE.ANSWER_LEADER, 0, _myInfo.Serialize()));
                         _nsTCPClient.Connect(remoteEP.Address, cbi.NodeData.TCPListenPort);
                     }
+
+                    if (OnDeviceListUpdate != null)
+                    {
+                        OnDeviceListUpdate();
+                    }
                     break;
                 case ENVELOPE_DIRECTIVE.ANSWER_LEADER: // Answer from leader (UDP)
                     // Found leader
@@ -339,6 +346,11 @@ namespace libdevicecomm
                 case ENVELOPE_DIRECTIVE.RESPONSE_CLIENT_LIST:
                     _infoList = DeserializeClientList(data);
                     RaiseEventConsoleMessage("Received client list from {0}.", header.MessageFrom);
+
+                    if (OnDeviceListUpdate != null)
+                    {
+                        OnDeviceListUpdate();
+                    }
 
                     break;
                 default:

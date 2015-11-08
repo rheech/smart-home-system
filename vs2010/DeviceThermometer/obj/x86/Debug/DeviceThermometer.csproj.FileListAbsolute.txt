@@ -12,3 +12,4 @@ D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\obj\x86\Debug\DeviceThermometer
 D:\Users\Cheong\Desktop\vs2010\DeviceThermometer\obj\x86\Debug\DeviceThermometer.frmMain.resources
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceThermometer.exe
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceThermometer.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\DeviceThermometer.exe.config

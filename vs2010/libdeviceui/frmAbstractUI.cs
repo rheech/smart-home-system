@@ -19,10 +19,11 @@ namespace libdeviceui
             InitializeComponent();
 
             cp = new CommunicationProtocol();
-            cp.OnStatusChange += new CommunicationProtocol.onStatusChange(cp_OnStatusChange);
-            cp.OnConsoleMessage += new CommunicationBase.onConsoleMessage(cp_OnConsoleMessage);
+            cp.OnStatusChange += new CommunicationProtocol.cbStatusChange(cp_OnStatusChange);
+            cp.OnConsoleMessage += new CommunicationBase.cbConsoleMessage(cp_OnConsoleMessage);
             cp.OnMessageArrival += new CommunicationProtocol.cbMessageArrival(cp_OnMessageArrival);
             cp.OnTextMessageArrival += new CommunicationProtocol.cbTextMessageArrival(cp_OnTextMessageArrival);
+            cp.OnDeviceListUpdate += new CommunicationBase.cbDeviceListUpdate(cp_OnDeviceListUpdate);
 
             //cp.StartCommunication();
         }
@@ -77,6 +78,10 @@ namespace libdeviceui
         protected virtual string cp_OnTextMessageArrival(int deviceID, ENVELOPE_HEADER header, string text)
         {
             return null;
+        }
+
+        protected virtual void cp_OnDeviceListUpdate()
+        {
         }
 
         private void tsMenuExit_Click(object sender, EventArgs e)

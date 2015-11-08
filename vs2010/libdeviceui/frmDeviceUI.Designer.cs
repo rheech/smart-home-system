@@ -32,6 +32,7 @@
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabSystemStatus = new System.Windows.Forms.TabPage();
             this.tabDevList = new System.Windows.Forms.TabPage();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lvDeviceList = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,6 +43,10 @@
             this.txtLogConsole = new libdeviceui.cptConsoleTextBox(this.components);
             this.tabMain.SuspendLayout();
             this.tabDevList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.tabLog.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,9 +74,7 @@
             // 
             // tabDevList
             // 
-            this.tabDevList.Controls.Add(this.lvDeviceList);
-            this.tabDevList.Controls.Add(this.btnTest);
-            this.tabDevList.Controls.Add(this.btnDevList);
+            this.tabDevList.Controls.Add(this.splitContainer1);
             this.tabDevList.Location = new System.Drawing.Point(4, 22);
             this.tabDevList.Name = "tabDevList";
             this.tabDevList.Padding = new System.Windows.Forms.Padding(3);
@@ -80,15 +83,37 @@
             this.tabDevList.Text = "Device List";
             this.tabDevList.UseVisualStyleBackColor = true;
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer1.IsSplitterFixed = true;
+            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.lvDeviceList);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnTest);
+            this.splitContainer1.Panel2.Controls.Add(this.btnDevList);
+            this.splitContainer1.Size = new System.Drawing.Size(370, 234);
+            this.splitContainer1.SplitterDistance = 198;
+            this.splitContainer1.TabIndex = 4;
+            // 
             // lvDeviceList
             // 
             this.lvDeviceList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.lvDeviceList.Location = new System.Drawing.Point(8, 6);
+            this.lvDeviceList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvDeviceList.Location = new System.Drawing.Point(0, 0);
             this.lvDeviceList.Name = "lvDeviceList";
-            this.lvDeviceList.Size = new System.Drawing.Size(360, 196);
+            this.lvDeviceList.Size = new System.Drawing.Size(370, 198);
             this.lvDeviceList.TabIndex = 3;
             this.lvDeviceList.UseCompatibleStateImageBehavior = false;
             this.lvDeviceList.View = System.Windows.Forms.View.Details;
@@ -96,31 +121,33 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Device ID";
-            this.columnHeader1.Width = 68;
+            this.columnHeader1.Width = 74;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Name";
-            this.columnHeader2.Width = 89;
+            this.columnHeader2.Width = 94;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "TCP Address";
-            this.columnHeader3.Width = 131;
+            this.columnHeader3.Width = 150;
             // 
             // btnTest
             // 
-            this.btnTest.Location = new System.Drawing.Point(212, 208);
+            this.btnTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTest.Location = new System.Drawing.Point(214, 3);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(75, 23);
             this.btnTest.TabIndex = 2;
             this.btnTest.Text = "Test";
             this.btnTest.UseVisualStyleBackColor = true;
-            this.btnTest.Click += new System.EventHandler(this.button1_Click);
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // btnDevList
             // 
-            this.btnDevList.Location = new System.Drawing.Point(293, 208);
+            this.btnDevList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDevList.Location = new System.Drawing.Point(295, 3);
             this.btnDevList.Name = "btnDevList";
             this.btnDevList.Size = new System.Drawing.Size(75, 23);
             this.btnDevList.TabIndex = 1;
@@ -161,6 +188,10 @@
             this.Controls.SetChildIndex(this.tabMain, 0);
             this.tabMain.ResumeLayout(false);
             this.tabDevList.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.tabLog.ResumeLayout(false);
             this.tabLog.PerformLayout();
             this.ResumeLayout(false);
@@ -181,5 +212,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         protected System.Windows.Forms.TabControl tabMain;
+        private System.Windows.Forms.SplitContainer splitContainer1;
     }
 }

@@ -39,7 +39,17 @@ namespace libdeviceui
             return base.cp_OnTextMessageArrival(deviceID, header, text);
         }
 
+        protected override void cp_OnDeviceListUpdate()
+        {
+            UpdateDeviceList();
+        }
+
         private void btnDevList_Click(object sender, EventArgs e)
+        {
+            UpdateDeviceList();
+        }
+
+        private void UpdateDeviceList()
         {
             ListViewItem lvi;
             lvDeviceList.Items.Clear();
@@ -54,9 +64,23 @@ namespace libdeviceui
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnTest_Click(object sender, EventArgs e)
         {
-            cp.Send(cp.LeaderID, "Hello World!");
+            int deviceID;
+
+            try
+            {
+                if (lvDeviceList.SelectedItems.Count > 0)
+                {
+                    deviceID = Int32.Parse(lvDeviceList.SelectedItems[0].SubItems[0].Text);
+
+                    cp.Send(deviceID, "Hello World!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         public void WriteLog(string text)
