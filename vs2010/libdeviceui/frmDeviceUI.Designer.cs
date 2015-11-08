@@ -32,8 +32,12 @@
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabSystemStatus = new System.Windows.Forms.TabPage();
             this.tabDevList = new System.Windows.Forms.TabPage();
+            this.lvDeviceList = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnTest = new System.Windows.Forms.Button();
             this.btnDevList = new System.Windows.Forms.Button();
-            this.lstDeviceList = new System.Windows.Forms.ListBox();
             this.tabLog = new System.Windows.Forms.TabPage();
             this.txtLogConsole = new libdeviceui.cptConsoleTextBox(this.components);
             this.tabMain.SuspendLayout();
@@ -65,8 +69,9 @@
             // 
             // tabDevList
             // 
+            this.tabDevList.Controls.Add(this.lvDeviceList);
+            this.tabDevList.Controls.Add(this.btnTest);
             this.tabDevList.Controls.Add(this.btnDevList);
-            this.tabDevList.Controls.Add(this.lstDeviceList);
             this.tabDevList.Location = new System.Drawing.Point(4, 22);
             this.tabDevList.Name = "tabDevList";
             this.tabDevList.Padding = new System.Windows.Forms.Padding(3);
@@ -75,23 +80,53 @@
             this.tabDevList.Text = "Device List";
             this.tabDevList.UseVisualStyleBackColor = true;
             // 
+            // lvDeviceList
+            // 
+            this.lvDeviceList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lvDeviceList.Location = new System.Drawing.Point(8, 6);
+            this.lvDeviceList.Name = "lvDeviceList";
+            this.lvDeviceList.Size = new System.Drawing.Size(360, 196);
+            this.lvDeviceList.TabIndex = 3;
+            this.lvDeviceList.UseCompatibleStateImageBehavior = false;
+            this.lvDeviceList.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Device ID";
+            this.columnHeader1.Width = 68;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Name";
+            this.columnHeader2.Width = 89;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "TCP Address";
+            this.columnHeader3.Width = 131;
+            // 
+            // btnTest
+            // 
+            this.btnTest.Location = new System.Drawing.Point(212, 208);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(75, 23);
+            this.btnTest.TabIndex = 2;
+            this.btnTest.Text = "Test";
+            this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnDevList
             // 
-            this.btnDevList.Location = new System.Drawing.Point(263, 179);
+            this.btnDevList.Location = new System.Drawing.Point(293, 208);
             this.btnDevList.Name = "btnDevList";
             this.btnDevList.Size = new System.Drawing.Size(75, 23);
             this.btnDevList.TabIndex = 1;
-            this.btnDevList.Text = "button1";
+            this.btnDevList.Text = "&Update";
             this.btnDevList.UseVisualStyleBackColor = true;
             this.btnDevList.Click += new System.EventHandler(this.btnDevList_Click);
-            // 
-            // lstDeviceList
-            // 
-            this.lstDeviceList.FormattingEnabled = true;
-            this.lstDeviceList.Location = new System.Drawing.Point(3, 3);
-            this.lstDeviceList.Name = "lstDeviceList";
-            this.lstDeviceList.Size = new System.Drawing.Size(222, 199);
-            this.lstDeviceList.TabIndex = 0;
             // 
             // tabLog
             // 
@@ -137,10 +172,14 @@
 
         private System.Windows.Forms.TabPage tabLog;
         private cptConsoleTextBox txtLogConsole;
-        private System.Windows.Forms.TabControl tabMain;
         protected System.Windows.Forms.TabPage tabSystemStatus;
         private System.Windows.Forms.TabPage tabDevList;
         private System.Windows.Forms.Button btnDevList;
-        private System.Windows.Forms.ListBox lstDeviceList;
+        private System.Windows.Forms.Button btnTest;
+        private System.Windows.Forms.ListView lvDeviceList;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        protected System.Windows.Forms.TabControl tabMain;
     }
 }

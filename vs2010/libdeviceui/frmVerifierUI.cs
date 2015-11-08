@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace libdeviceui
 {
-    public partial class frmVerifierUI : frmAbstractUI
+    public partial class frmVerifierUI : frmDeviceUI
     {
         private Size _size;
 
@@ -26,12 +26,12 @@ namespace libdeviceui
 
         private void frmVerifierUI_Load(object sender, EventArgs e)
         {
-            txtLogConsole.WriteLine("Verification engine started.");
+            WriteLog("Verification engine started.");
         }
 
         protected override void cp_OnConsoleMessage(string message)
         {
-            txtLogConsole.WriteLine(message);
+            WriteLog(message);
         }
 
         private void btnInsert_Click(object sender, EventArgs e)

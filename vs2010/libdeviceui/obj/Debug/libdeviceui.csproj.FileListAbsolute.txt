@@ -20,12 +20,3 @@ D:\Users\Cheong\Desktop\vs2010\libdeviceui\obj\Debug\libdeviceui.dll
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\libdeviceui.dll
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\libdeviceui.pdb
 D:\Users\Cheong\Desktop\vs2010\libdeviceui\obj\Debug\libdeviceui.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\libdeviceui.dll
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\libdeviceui.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui.csprojResolveAssemblyReference.cache
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui.frmAbstractUI.resources
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui.frmDeviceUI.resources
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui.frmVerifierUI.resources
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui.csproj.GenerateResource.Cache
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui.dll
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\libdeviceui\obj\Debug\libdeviceui.pdb

@@ -1,0 +1,487 @@
+﻿2015-11-08 01:11:35,609 [10108] INFO  SocketServer-15645912 - The server instance SocketServer-15645912 has been started!
+2015-11-08 01:11:38,841 [3904] INFO  SocketServer-15645912 - Session: 71f08c1c-8924-4790-8e59-d2adf4604b40/127.0.0.1:3790
+A new session connected!
+2015-11-08 01:12:30,132 [6124] INFO  SocketServer-45592480 - The server instance SocketServer-45592480 has been started!
+2015-11-08 01:12:33,472 [5896] INFO  SocketServer-45592480 - Session: f15ffaf9-0556-48d7-be3f-37d474e97d44/127.0.0.1:3793
+A new session connected!
+2015-11-08 01:13:52,168 [8700] INFO  SocketServer-41149443 - The server instance SocketServer-41149443 has been started!
+2015-11-08 01:14:00,119 [9548] INFO  SocketServer-41149443 - Session: 1769acd4-de70-4b4e-8422-065b5a997d18/127.0.0.1:3796
+A new session connected!
+2015-11-08 01:15:49,433 [10172] INFO  SocketServer-9008175 - The server instance SocketServer-9008175 has been started!
+2015-11-08 01:15:50,815 [4240] INFO  SocketServer-9008175 - Session: 79a64921-fa48-4a5a-81f0-f3c2b5797556/127.0.0.1:3799
+A new session connected!
+2015-11-08 01:15:57,234 [3820] INFO  SocketServer-41149443 - The server instance SocketServer-41149443 has been started!
+2015-11-08 01:15:59,029 [5896] INFO  SocketServer-41149443 - Session: 5fad5dfb-f897-4188-9dc0-20378520a8b5/127.0.0.1:3800
+A new session connected!
+2015-11-08 01:16:11,993 [1852] INFO  SocketServer-41149443 - The server instance SocketServer-41149443 has been started!
+2015-11-08 01:16:14,498 [9996] INFO  SocketServer-41149443 - Session: d77dc221-197d-4ca9-afe4-2716f5a67d0c/127.0.0.1:3801
+A new session connected!
+2015-11-08 01:16:31,477 [9452] INFO  SocketServer-41149443 - The server instance SocketServer-41149443 has been started!
+2015-11-08 01:16:33,449 [10220] INFO  SocketServer-41149443 - Session: 4face51f-25c9-4a5b-a1e9-b8384c3be829/127.0.0.1:3803
+A new session connected!
+2015-11-08 01:20:22,956 [4776] INFO  SocketServer-15645912 - The server instance SocketServer-15645912 has been started!
+2015-11-08 01:20:26,610 [8540] INFO  SocketServer-15645912 - Session: 1156d10e-2a27-490b-bb2d-ae9d0e51219d/127.0.0.1:3809
+A new session connected!
+2015-11-08 01:20:44,597 [8320] INFO  SocketServer-41149443 - The server instance SocketServer-41149443 has been started!
+2015-11-08 01:21:00,720 [4060] INFO  SocketServer-41149443 - The server instance SocketServer-41149443 has been started!
+2015-11-08 01:21:02,447 [9148] INFO  SocketServer-41149443 - Session: b146774e-0c7e-4778-97ec-44122300e194/127.0.0.1:3812
+A new session connected!
+2015-11-08 01:21:55,013 [7312] INFO  SocketServer-41149443 - The server instance SocketServer-41149443 has been started!
+2015-11-08 01:21:56,912 [4272] INFO  SocketServer-41149443 - Session: 9329df86-4324-4cc7-98a9-443c9cec04a4/127.0.0.1:3820
+A new session connected!
+2015-11-08 01:22:42,581 [9528] INFO  SocketServer-41149443 - Session: 9329df86-4324-4cc7-98a9-443c9cec04a4/127.0.0.1:3820
+This session was closed for ClientClosing!
+2015-11-08 01:29:31,705 [6012] INFO  SocketServer-15645912 - The server instance SocketServer-15645912 has been started!
+2015-11-08 01:30:10,760 [7564] INFO  SocketServer-45592480 - The server instance SocketServer-45592480 has been started!
+2015-11-08 01:30:51,437 [9892] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 01:31:47,694 [8628] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 01:32:15,091 [6572] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 01:39:59,192 [9460] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 01:40:53,553 [6112] INFO  SocketServer-23264094 - The server instance SocketServer-23264094 has been started!
+2015-11-08 01:41:53,016 [9000] INFO  SocketServer-1723863 - The server instance SocketServer-1723863 has been started!
+2015-11-08 01:43:09,061 [9988] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 01:43:37,636 [4316] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 01:44:08,773 [9832] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 01:44:38,491 [8712] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 01:46:29,697 [8352] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 01:47:05,744 [9380] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 01:48:01,228 [7624] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 01:49:04,183 [6432] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 01:50:27,446 [10220] INFO  SocketServer-59109011 - Session: 0dac2d81-3b2e-4ff5-ac27-054b2098bce1/192.168.2.100:3961
+This session was closed for ClientClosing!
+2015-11-08 11:34:31,504 [10140] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 11:37:46,342 [11552] INFO  SocketServer-51396626 - The server instance SocketServer-51396626 has been started!
+2015-11-08 11:38:00,201 [3288] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 11:38:17,032 [4668] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 12:03:43,178 [3340] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 12:26:56,704 [11264] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 12:36:29,191 [4892] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 12:38:44,565 [2204] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 12:42:25,212 [8860] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 12:49:50,444 [9388] INFO  SocketServer-51396626 - The server instance SocketServer-51396626 has been started!
+2015-11-08 12:51:37,890 [10740] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 12:51:58,463 [9560] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 12:53:43,024 [11992] INFO  SocketServer-1723863 - The server instance SocketServer-1723863 has been started!
+2015-11-08 12:54:37,528 [9936] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 12:56:43,683 [10644] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 13:01:10,994 [8372] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 13:03:50,399 [8640] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 13:04:49,817 [10344] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 13:05:14,775 [6904] INFO  SocketServer-1723863 - The server instance SocketServer-1723863 has been started!
+2015-11-08 13:05:18,624 [11516] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 13:05:49,772 [4672] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 13:08:45,923 [11108] INFO  SocketServer-1723863 - The server instance SocketServer-1723863 has been started!
+2015-11-08 13:10:31,246 [5852] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 13:11:55,712 [10428] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:14:18,154 [10160] INFO  SocketServer-4015056 - The server instance SocketServer-4015056 has been started!
+2015-11-08 13:15:12,771 [2844] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:15:39,845 [9972] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:16:55,066 [5384] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 13:17:54,817 [10264] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 13:25:12,297 [2684] INFO  SocketServer-51396626 - The server instance SocketServer-51396626 has been started!
+2015-11-08 13:26:10,068 [10856] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 13:26:20,990 [8368] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:27:23,796 [10916] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 13:27:52,099 [4432] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:28:03,472 [9472] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:28:39,204 [4780] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:29:01,213 [10756] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:29:42,297 [9004] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:30:24,716 [8912] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:31:37,635 [9564] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 13:32:03,642 [10580] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:39:36,715 [11128] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 13:40:47,276 [11156] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 13:44:05,526 [2064] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 13:48:06,833 [10168] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 13:57:24,413 [10740] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 13:57:50,542 [3832] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:58:08,395 [1072] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 13:58:56,465 [11668] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 14:01:49,065 [2524] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 14:04:10,431 [10540] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:06:22,144 [10712] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:06:41,219 [2072] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:08:27,651 [4480] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 14:08:42,425 [9004] INFO  SocketServer-23264094 - The server instance SocketServer-23264094 has been started!
+2015-11-08 14:09:38,930 [4544] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 14:10:34,866 [8544] INFO  SocketServer-32176063 - Session: a318ece0-cf43-4dfd-b59e-469f239c50ff/192.168.2.100:12234
+This session was closed for ClientClosing!
+2015-11-08 14:11:30,045 [10560] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 14:11:44,743 [12036] INFO  SocketServer-32176063 - Session: 9c83bc36-01cd-4082-b18e-7f15da17fd58/192.168.2.100:12242
+This session was closed for ClientClosing!
+2015-11-08 14:12:38,291 [9276] INFO  SocketServer-1723863 - The server instance SocketServer-1723863 has been started!
+2015-11-08 14:13:18,749 [4892] INFO  SocketServer-1723863 - The server instance SocketServer-1723863 has been started!
+2015-11-08 14:13:40,423 [3284] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 14:14:18,253 [6696] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 14:15:06,334 [9568] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:15:18,087 [12272] INFO  SocketServer-42119052 - Session: 5fe46c6f-f133-4c7d-8fdf-4cf31c38e2f4/192.168.2.100:12296
+This session was closed for ClientClosing!
+2015-11-08 14:15:22,211 [2684] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:15:22,267 [9104] INFO  SocketServer-42119052 - Session: 8d9e6903-5b12-4802-8d5b-c94649713064/192.168.2.100:12303
+A new session connected!
+2015-11-08 14:15:22,273 [5792] INFO  SocketServer-42119052 - Session: 8d9e6903-5b12-4802-8d5b-c94649713064/192.168.2.100:12303
+This session was closed for ClientClosing!
+2015-11-08 14:15:43,879 [4220] INFO  SocketServer-42119052 - Session: 7ce2fd01-8675-4b26-b477-e7b64326d89e/192.168.2.100:12310
+This session was closed for ClientClosing!
+2015-11-08 14:16:34,148 [4220] INFO  SocketServer-42119052 - Session: 53af3431-fbcd-47c7-8dc4-fb5fc223c774/192.168.2.100:12312
+This session was closed for ClientClosing!
+2015-11-08 14:17:05,675 [2268] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:17:50,448 [3268] INFO  SocketServer-42119052 - Session: 54668809-b891-4d0f-9c43-a2dc473e8e30/192.168.2.100:12337
+This session was closed for ClientClosing!
+2015-11-08 14:18:21,040 [9748] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:18:44,037 [9104] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:18:59,503 [11964] INFO  SocketServer-42119052 - Session: 6e080a48-2323-4b91-ab2a-5f6d8574625a/192.168.2.100:12399
+This session was closed for ClientClosing!
+2015-11-08 14:19:11,846 [9720] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:39:48,142 [5860] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 14:41:08,096 [11444] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 14:46:19,698 [11984] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:46:52,560 [10808] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 14:48:13,970 [9192] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 14:49:12,744 [12276] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 14:49:59,643 [2044] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 14:50:19,868 [12284] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:50:48,021 [12176] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 14:51:20,803 [12232] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 14:56:01,930 [11024] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:56:12,458 [3464] INFO  SocketServer-42119052 - Session: 329d1783-9494-461f-9a34-4dc5ef253cc2/192.168.2.100:12566
+This session was closed for ClientClosing!
+2015-11-08 14:56:13,143 [4220] INFO  SocketServer-42119052 - Session: 639da9eb-1425-4114-b0a9-ab92e9f745f1/192.168.2.100:12567
+This session was closed for ClientClosing!
+2015-11-08 14:56:14,009 [11384] INFO  SocketServer-42119052 - Session: d85dc1a7-fc6a-46db-91e4-ca251480d92d/192.168.2.100:12569
+This session was closed for ClientClosing!
+2015-11-08 14:56:34,734 [10204] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 14:57:05,825 [11124] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 14:57:15,962 [12164] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 14:58:50,533 [11116] INFO  SocketServer-1723863 - The server instance SocketServer-1723863 has been started!
+2015-11-08 14:59:33,983 [8416] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 15:03:50,966 [9284] INFO  SocketServer-1723863 - The server instance SocketServer-1723863 has been started!
+2015-11-08 15:19:56,051 [9232] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 15:20:36,255 [4576] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 16:16:34,082 [4560] INFO  SocketServer-41396006 - The server instance SocketServer-41396006 has been started!
+2015-11-08 16:33:10,345 [10448] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 16:35:02,431 [8720] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 16:35:13,974 [11184] INFO  SocketServer-23264094 - The server instance SocketServer-23264094 has been started!
+2015-11-08 16:35:28,149 [11544] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 16:46:20,305 [4024] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 17:53:48,321 [8828] INFO  SocketServer-6761086 - The server instance SocketServer-6761086 has been started!
+2015-11-08 17:54:06,121 [11356] INFO  SocketServer-23264094 - The server instance SocketServer-23264094 has been started!
+2015-11-08 17:55:17,292 [8416] INFO  SocketServer-1723863 - The server instance SocketServer-1723863 has been started!
+2015-11-08 17:55:43,356 [9332] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 17:56:39,501 [11392] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 17:56:49,773 [5316] INFO  SocketServer-42119052 - Session: e856e638-15f2-43ed-91a3-4fba34d465e1/192.168.2.100:14354
+This session was closed for ClientClosing!
+2015-11-08 17:56:55,393 [12052] INFO  SocketServer-23264094 - The server instance SocketServer-23264094 has been started!
+2015-11-08 18:02:17,357 [6480] INFO  SocketServer-41396006 - The server instance SocketServer-41396006 has been started!
+2015-11-08 18:02:48,503 [9444] INFO  SocketServer-32176063 - Session: 7b806355-1506-400e-b5dc-d74a32c1416c/192.168.2.100:14383
+This session was closed for ClientClosing!
+2015-11-08 18:02:59,446 [9496] INFO  SocketServer-23264094 - The server instance SocketServer-23264094 has been started!
+2015-11-08 18:03:08,250 [10696] INFO  SocketServer-59109011 - Session: 6b36bbf2-8892-4361-8d5a-2ee4b665e249/192.168.2.100:14396
+This session was closed for ClientClosing!
+2015-11-08 18:03:13,526 [9812] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:03:20,872 [10768] INFO  SocketServer-59109011 - Session: 03e4db81-e030-4dae-a1a3-1ea743e14fca/192.168.2.100:14408
+This session was closed for ClientClosing!
+2015-11-08 18:03:46,615 [8420] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 18:04:02,765 [4532] INFO  SocketServer-32176063 - Session: 46bc087c-43c3-48ad-b361-c21043c772ee/192.168.2.100:14420
+This session was closed for ClientClosing!
+2015-11-08 18:04:07,223 [9700] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:05:54,502 [10440] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 18:05:56,457 [8592] INFO  SocketServer-17818390 - Session: 1940a62d-d6a8-4c9e-a1d9-32852dbd607c/192.168.2.100:14431
+A new session connected!
+2015-11-08 18:06:01,794 [9604] INFO  SocketServer-17818390 - Session: 63df38f5-dfa6-460c-8cb2-a8c59e8e4cc6/192.168.2.100:14438
+A new session connected!
+2015-11-08 18:06:01,797 [9604] INFO  SocketServer-17818390 - Session: 89f2a711-5bb3-4efc-98ab-63dd570f9655/192.168.2.100:14439
+A new session connected!
+2015-11-08 18:06:01,884 [5784] INFO  SocketServer-17818390 - Session: 89f2a711-5bb3-4efc-98ab-63dd570f9655/192.168.2.100:14439
+This session was closed for ClientClosing!
+2015-11-08 18:06:07,013 [3808] INFO  SocketServer-17818390 - Session: 63df38f5-dfa6-460c-8cb2-a8c59e8e4cc6/192.168.2.100:14438
+This session was closed for ClientClosing!
+2015-11-08 18:06:07,048 [7716] INFO  SocketServer-17818390 - Session: 1940a62d-d6a8-4c9e-a1d9-32852dbd607c/192.168.2.100:14431
+This session was closed for ClientClosing!
+2015-11-08 18:06:07,066 [9100] INFO  SocketServer-1723863 - Session: e5bb7330-8744-408f-a4df-21996eebd00b/192.168.2.100:14437
+This session was closed for ClientClosing!
+2015-11-08 18:06:18,095 [6400] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:06:26,405 [1092] INFO  SocketServer-59109011 - Session: 6dbb281f-742c-47dc-b541-bcec8118cc4d/192.168.2.100:14453
+A new session connected!
+2015-11-08 18:06:26,405 [4712] INFO  SocketServer-59109011 - Session: db91aa06-addd-49e6-8898-93557ca47656/192.168.2.100:14454
+A new session connected!
+2015-11-08 18:06:26,405 [8416] INFO  SocketServer-59109011 - Session: 30dfc328-0cf8-4236-a5a0-edf0fa399a1d/192.168.2.100:14455
+A new session connected!
+2015-11-08 18:06:33,155 [4712] INFO  SocketServer-59109011 - Session: b95b09f8-a1f5-4022-a200-bb1766c28b54/192.168.2.100:14457
+A new session connected!
+2015-11-08 18:06:46,476 [10276] INFO  SocketServer-59109011 - Session: d6962e24-3524-4405-849d-0e553360e4d0/192.168.2.100:14452
+This session was closed for ClientClosing!
+2015-11-08 18:08:08,251 [10648] INFO  SocketServer-1723863 - The server instance SocketServer-1723863 has been started!
+2015-11-08 18:08:20,082 [4692] INFO  SocketServer-1723863 - Session: 4bf539e2-585d-4eb0-94ca-4f0b60b1ed3a/192.168.2.100:14467
+A new session connected!
+2015-11-08 18:08:38,783 [4692] INFO  SocketServer-1723863 - Session: 94fdd7ba-3ebd-4e90-8315-5462fa7ae537/192.168.2.100:14476
+A new session connected!
+2015-11-08 18:08:53,460 [3464] INFO  SocketServer-1723863 - Session: a3fc0439-c4b6-466d-aa3e-b3876577e7e6/192.168.2.100:14478
+A new session connected!
+2015-11-08 18:09:24,340 [12284] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:09:26,051 [10336] INFO  SocketServer-59109011 - Session: ec5f55ca-a85b-41e2-a27f-f209a43a4f21/192.168.2.100:14482
+A new session connected!
+2015-11-08 18:09:47,415 [12116] INFO  SocketServer-59109011 - Session: f370d166-9984-4851-954b-90473ec6d480/192.168.2.100:14492
+A new session connected!
+2015-11-08 18:10:42,588 [11816] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:10:52,506 [10336] INFO  SocketServer-59109011 - Session: 47609eb6-1a5a-45a3-a23c-ba148866977a/192.168.2.100:14496
+A new session connected!
+2015-11-08 18:10:57,119 [10336] INFO  SocketServer-59109011 - Session: a7ec490c-cd78-4adb-a5c3-d2eab2f3f360/192.168.2.100:14505
+A new session connected!
+2015-11-08 18:10:57,119 [4776] INFO  SocketServer-59109011 - Session: 026eece8-9096-46f6-9e77-58a4c92b2b2d/192.168.2.100:14504
+A new session connected!
+2015-11-08 18:11:20,359 [9672] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:11:21,071 [12256] INFO  SocketServer-59109011 - Session: 42ad951d-6f27-440f-9332-9daa0f4ba04d/192.168.2.100:14510
+A new session connected!
+2015-11-08 18:11:21,483 [12256] INFO  SocketServer-59109011 - Session: 6e95ae9f-dcbd-4322-8892-3d0de8f65768/192.168.2.100:14513
+A new session connected!
+2015-11-08 18:11:21,953 [12256] INFO  SocketServer-59109011 - Session: 9360b34d-58b4-4b56-b97d-6cdd450daa6d/192.168.2.100:14516
+A new session connected!
+2015-11-08 18:11:22,442 [12256] INFO  SocketServer-59109011 - Session: e27ceed4-c7a2-426e-a9cb-09d51dd96749/192.168.2.100:14519
+A new session connected!
+2015-11-08 18:11:25,356 [10160] INFO  SocketServer-59109011 - Session: e27ceed4-c7a2-426e-a9cb-09d51dd96749/192.168.2.100:14519
+This session was closed for ClientClosing!
+2015-11-08 18:11:25,367 [10160] INFO  SocketServer-59109011 - Session: 6e95ae9f-dcbd-4322-8892-3d0de8f65768/192.168.2.100:14513
+This session was closed for ClientClosing!
+2015-11-08 18:11:25,383 [10160] INFO  SocketServer-59109011 - Session: 9360b34d-58b4-4b56-b97d-6cdd450daa6d/192.168.2.100:14516
+This session was closed for ClientClosing!
+2015-11-08 18:11:25,399 [11736] INFO  SocketServer-59109011 - Session: 42ad951d-6f27-440f-9332-9daa0f4ba04d/192.168.2.100:14510
+This session was closed for ClientClosing!
+2015-11-08 18:11:32,121 [12004] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:11:32,707 [11464] INFO  SocketServer-59109011 - Session: a318a26c-3b6f-40a3-b794-cf1e964741db/192.168.2.100:14523
+A new session connected!
+2015-11-08 18:11:33,234 [11464] INFO  SocketServer-59109011 - Session: 6bcf268b-f64a-4ecd-a480-b26f65cb3964/192.168.2.100:14526
+A new session connected!
+2015-11-08 18:11:33,768 [11464] INFO  SocketServer-59109011 - Session: 41ae25f3-7cc7-41aa-b58c-d8d1e63c9c71/192.168.2.100:14529
+A new session connected!
+2015-11-08 18:11:34,230 [11464] INFO  SocketServer-59109011 - Session: 99b3bbf4-ec6c-4077-bf09-aef611e98741/192.168.2.100:14532
+A new session connected!
+2015-11-08 18:11:51,723 [8456] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:12:00,141 [5284] INFO  SocketServer-59109011 - Session: 38cb0901-8d1a-4adc-bc32-7f32b743a94f/192.168.2.100:14537
+A new session connected!
+2015-11-08 18:12:30,072 [2592] INFO  SocketServer-59109011 - Session: c5e3eec1-24ff-4c34-a7e8-586b72a2620e/192.168.2.100:14543
+A new session connected!
+2015-11-08 18:12:33,260 [11184] INFO  SocketServer-59109011 - Session: a54f6ce1-c4fb-4232-859b-9ad14e2e6887/192.168.2.100:14546
+A new session connected!
+2015-11-08 18:12:33,268 [11184] INFO  SocketServer-59109011 - Session: 3290699a-3426-4764-9299-0599015160ad/192.168.2.100:14547
+A new session connected!
+2015-11-08 18:14:03,996 [9648] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 18:14:04,642 [7608] INFO  SocketServer-32176063 - Session: a63acf04-6348-4a18-be20-10a96d15c3e8/192.168.2.100:14556
+A new session connected!
+2015-11-08 18:14:07,731 [7608] INFO  SocketServer-32176063 - Session: 271e0fa3-9e57-4518-99bc-5887d7b0c505/192.168.2.100:14563
+A new session connected!
+2015-11-08 18:14:07,744 [7608] INFO  SocketServer-32176063 - Session: 214939d3-7c41-4a4e-b370-bee7f0c86c3d/192.168.2.100:14564
+A new session connected!
+2015-11-08 18:14:07,752 [7608] INFO  SocketServer-32176063 - Session: 8f129d4a-f4c8-4ad4-84e2-101302c1b789/192.168.2.100:14565
+A new session connected!
+2015-11-08 18:14:46,396 [6840] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 18:14:47,056 [8984] INFO  SocketServer-32176063 - Session: 47dacf37-f155-4215-ba55-f2854ef41b65/192.168.2.100:14569
+A new session connected!
+2015-11-08 18:14:51,624 [8984] INFO  SocketServer-32176063 - Session: 17e05a53-4a26-4a05-9394-48936a19ba05/192.168.2.100:14576
+A new session connected!
+2015-11-08 18:14:51,633 [8984] INFO  SocketServer-32176063 - Session: 0cfd2a9a-7eb3-42ab-bc2d-276390a214f2/192.168.2.100:14577
+A new session connected!
+2015-11-08 18:15:01,227 [8984] INFO  SocketServer-32176063 - Session: b6d86b8a-5b80-419c-945b-7e99744ba3bd/192.168.2.100:14578
+A new session connected!
+2015-11-08 18:15:39,538 [1072] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 18:15:41,799 [4692] INFO  SocketServer-32176063 - Session: 211460b7-5dd2-4f3c-9ff4-7270ea73eff8/192.168.2.100:14584
+A new session connected!
+2015-11-08 18:15:47,990 [4692] INFO  SocketServer-32176063 - Session: 30357025-1183-474c-980e-69256b540a9f/192.168.2.100:14589
+A new session connected!
+2015-11-08 18:15:48,103 [4692] INFO  SocketServer-32176063 - Session: 5d42aa88-2d62-4b40-846d-70c1a711d277/192.168.2.100:14592
+A new session connected!
+2015-11-08 18:15:49,749 [4692] INFO  SocketServer-32176063 - Session: 2454d614-eb4e-48dc-bc4a-9c71d4d24cc9/192.168.2.100:14593
+A new session connected!
+2015-11-08 18:15:53,239 [12064] INFO  SocketServer-32176063 - Session: 2454d614-eb4e-48dc-bc4a-9c71d4d24cc9/192.168.2.100:14593
+This session was closed for ClientClosing!
+2015-11-08 18:15:53,251 [10392] INFO  SocketServer-32176063 - Session: 30357025-1183-474c-980e-69256b540a9f/192.168.2.100:14589
+This session was closed for ClientClosing!
+2015-11-08 18:15:53,262 [12064] INFO  SocketServer-32176063 - Session: 211460b7-5dd2-4f3c-9ff4-7270ea73eff8/192.168.2.100:14584
+This session was closed for ClientClosing!
+2015-11-08 18:16:20,590 [11920] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 18:16:21,331 [5524] INFO  SocketServer-32176063 - Session: 5131a279-b9a8-4cba-aad8-afc91bfec9ab/192.168.2.100:14597
+A new session connected!
+2015-11-08 18:17:21,210 [11600] INFO  SocketServer-32176063 - Session: cbd1c9f2-dfa3-4957-9b70-706f32989057/192.168.2.100:14609
+A new session connected!
+2015-11-08 18:17:24,231 [9120] INFO  SocketServer-32176063 - Session: 3285950d-cd5d-4f43-a77a-e3b16594e2ec/192.168.2.100:14610
+A new session connected!
+2015-11-08 18:17:24,231 [3904] INFO  SocketServer-32176063 - Session: 8ac8e2ab-8ef5-4499-9d25-2d6572510439/192.168.2.100:14611
+A new session connected!
+2015-11-08 18:18:33,665 [6232] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:18:38,800 [8932] INFO  SocketServer-59109011 - Session: caa83a72-5660-4bd0-91a5-d520191691b9/192.168.2.100:14615
+A new session connected!
+2015-11-08 18:18:44,804 [8932] INFO  SocketServer-59109011 - Session: 8445b217-479b-4b6a-aa52-932c7bb5ba9f/192.168.2.100:14625
+A new session connected!
+2015-11-08 18:18:54,423 [9220] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:18:55,158 [9120] INFO  SocketServer-59109011 - Session: a3313a2f-3c19-402e-91ae-3781618ae02d/192.168.2.100:14629
+A new session connected!
+2015-11-08 18:19:27,951 [12284] INFO  SocketServer-59109011 - Session: 3c7d266a-299d-44e3-9acf-bd02513afd92/192.168.2.100:14637
+A new session connected!
+2015-11-08 18:19:35,930 [12284] INFO  SocketServer-59109011 - Session: 6a3df0fb-2a39-4929-a51b-1d8d8318c012/192.168.2.100:14638
+A new session connected!
+2015-11-08 18:19:35,954 [12284] INFO  SocketServer-59109011 - Session: f9bb1140-953a-4a42-b5e4-ba66ebc436c5/192.168.2.100:14639
+A new session connected!
+2015-11-08 18:27:27,275 [10936] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 18:27:27,842 [2624] INFO  SocketServer-32176063 - Session: abd9b29f-80d6-4a00-bb71-34982d9f108b/192.168.2.100:14881
+A new session connected!
+2015-11-08 18:27:29,771 [2624] INFO  SocketServer-32176063 - Session: 87780b8f-cee5-457e-a996-689f8560bc4d/192.168.2.100:14889
+A new session connected!
+2015-11-08 18:27:29,775 [2624] INFO  SocketServer-32176063 - Session: 652fc03a-6dd6-4d71-b53c-848a3671171c/192.168.2.100:14891
+A new session connected!
+2015-11-08 18:27:34,613 [2624] INFO  SocketServer-32176063 - Session: 7f7bca3c-fbf3-444a-aa99-ec0eaac9c9b4/192.168.2.100:14892
+A new session connected!
+2015-11-08 18:27:42,268 [2996] INFO  SocketServer-32176063 - Session: 652fc03a-6dd6-4d71-b53c-848a3671171c/192.168.2.100:14891
+This session was closed for ClientClosing!
+2015-11-08 18:27:42,280 [8456] INFO  SocketServer-32176063 - Session: 7f7bca3c-fbf3-444a-aa99-ec0eaac9c9b4/192.168.2.100:14892
+This session was closed for ClientClosing!
+2015-11-08 18:27:42,296 [2996] INFO  SocketServer-32176063 - Session: 87780b8f-cee5-457e-a996-689f8560bc4d/192.168.2.100:14889
+This session was closed for ClientClosing!
+2015-11-08 18:27:42,314 [3472] INFO  SocketServer-32176063 - Session: abd9b29f-80d6-4a00-bb71-34982d9f108b/192.168.2.100:14881
+This session was closed for ClientClosing!
+2015-11-08 18:28:41,916 [9420] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 18:28:42,880 [5392] INFO  SocketServer-42119052 - Session: 5f38548f-0f99-4a30-9883-c3b51b797c54/192.168.2.100:14932
+A new session connected!
+2015-11-08 18:28:43,622 [5392] INFO  SocketServer-42119052 - Session: 09b1a71d-1e59-46bf-8f1a-233a96eb2988/192.168.2.100:14935
+A new session connected!
+2015-11-08 18:28:43,828 [5392] INFO  SocketServer-42119052 - Session: 6d9151d4-5d86-4d0e-b865-d84d00debb32/192.168.2.100:14939
+A new session connected!
+2015-11-08 18:28:44,937 [5392] INFO  SocketServer-42119052 - Session: b73dc064-9f22-4bc5-b373-4065f4926394/192.168.2.100:14942
+A new session connected!
+2015-11-08 18:28:50,238 [6908] INFO  SocketServer-42119052 - Session: b73dc064-9f22-4bc5-b373-4065f4926394/192.168.2.100:14942
+This session was closed for ClientClosing!
+2015-11-08 18:28:50,586 [12260] INFO  SocketServer-42119052 - Session: 6d9151d4-5d86-4d0e-b865-d84d00debb32/192.168.2.100:14939
+This session was closed for ClientClosing!
+2015-11-08 18:28:50,988 [6908] INFO  SocketServer-42119052 - Session: 09b1a71d-1e59-46bf-8f1a-233a96eb2988/192.168.2.100:14935
+This session was closed for ClientClosing!
+2015-11-08 18:28:51,344 [12260] INFO  SocketServer-42119052 - Session: 5f38548f-0f99-4a30-9883-c3b51b797c54/192.168.2.100:14932
+This session was closed for ClientClosing!
+2015-11-08 18:29:00,797 [10076] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 18:29:01,459 [5936] INFO  SocketServer-17818390 - Session: d4244d54-4762-4a24-a7b1-54158dac4ccd/192.168.2.100:14947
+A new session connected!
+2015-11-08 18:29:01,909 [5936] INFO  SocketServer-17818390 - Session: 19f9b2b6-533e-41f6-8401-7c3adfe65989/192.168.2.100:14950
+A new session connected!
+2015-11-08 18:29:02,519 [5936] INFO  SocketServer-17818390 - Session: d3aca9e3-9321-4226-bbc2-165cbbd80bf6/192.168.2.100:14953
+A new session connected!
+2015-11-08 18:29:02,935 [5936] INFO  SocketServer-17818390 - Session: df2e0f74-9a31-4bf1-a1c4-1aec0e698775/192.168.2.100:14956
+A new session connected!
+2015-11-08 18:29:05,378 [12268] INFO  SocketServer-17818390 - Session: df2e0f74-9a31-4bf1-a1c4-1aec0e698775/192.168.2.100:14956
+This session was closed for ClientClosing!
+2015-11-08 18:29:05,819 [10128] INFO  SocketServer-17818390 - Session: d3aca9e3-9321-4226-bbc2-165cbbd80bf6/192.168.2.100:14953
+This session was closed for ClientClosing!
+2015-11-08 18:29:06,267 [12268] INFO  SocketServer-17818390 - Session: 19f9b2b6-533e-41f6-8401-7c3adfe65989/192.168.2.100:14950
+This session was closed for ClientClosing!
+2015-11-08 18:29:07,056 [12268] INFO  SocketServer-17818390 - Session: d4244d54-4762-4a24-a7b1-54158dac4ccd/192.168.2.100:14947
+This session was closed for ClientClosing!
+2015-11-08 18:30:03,799 [10376] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 18:30:04,446 [7080] INFO  SocketServer-32176063 - Session: 308a2e78-68f8-4c7b-8fea-bb12291ef859/192.168.2.100:14964
+A new session connected!
+2015-11-08 18:30:08,905 [7080] INFO  SocketServer-32176063 - Session: 32b73670-4787-4200-8817-cb6ba950900c/192.168.2.100:14971
+A new session connected!
+2015-11-08 18:30:08,913 [12128] INFO  SocketServer-32176063 - Session: aa88fe92-cdb2-49b8-bcf6-3ed921f5816c/192.168.2.100:14973
+A new session connected!
+2015-11-08 18:30:08,913 [7080] INFO  SocketServer-32176063 - Session: bab379ed-e8f3-4dcd-ad59-1483f0e8cabd/192.168.2.100:14972
+A new session connected!
+2015-11-08 18:30:21,305 [11008] INFO  SocketServer-32176063 - Session: 32b73670-4787-4200-8817-cb6ba950900c/192.168.2.100:14971
+This session was closed for ClientClosing!
+2015-11-08 18:30:22,512 [1840] INFO  SocketServer-32176063 - Session: bab379ed-e8f3-4dcd-ad59-1483f0e8cabd/192.168.2.100:14972
+This session was closed for ClientClosing!
+2015-11-08 18:30:22,921 [5316] INFO  SocketServer-32176063 - Session: aa88fe92-cdb2-49b8-bcf6-3ed921f5816c/192.168.2.100:14973
+This session was closed for ClientClosing!
+2015-11-08 18:30:23,349 [10128] INFO  SocketServer-32176063 - Session: 308a2e78-68f8-4c7b-8fea-bb12291ef859/192.168.2.100:14964
+This session was closed for ClientClosing!
+2015-11-08 18:30:43,728 [4016] INFO  SocketServer-59109011 - The server instance SocketServer-59109011 has been started!
+2015-11-08 18:30:44,397 [11660] INFO  SocketServer-59109011 - Session: 25fc2900-6d84-422b-bc97-44e533c15329/192.168.2.100:14979
+A new session connected!
+2015-11-08 18:30:44,880 [11660] INFO  SocketServer-59109011 - Session: 777bd3fc-f3ae-4ab0-8d49-43793656ae23/192.168.2.100:14982
+A new session connected!
+2015-11-08 18:30:45,385 [11660] INFO  SocketServer-59109011 - Session: 23317747-97a2-4803-833d-fba3eb40fcf4/192.168.2.100:14985
+A new session connected!
+2015-11-08 18:30:45,884 [11660] INFO  SocketServer-59109011 - Session: dfba5649-be14-4c4d-9001-d9e0110770b5/192.168.2.100:14988
+A new session connected!
+2015-11-08 18:30:50,397 [5180] INFO  SocketServer-59109011 - Session: dfba5649-be14-4c4d-9001-d9e0110770b5/192.168.2.100:14988
+This session was closed for ClientClosing!
+2015-11-08 18:33:38,911 [1928] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 18:33:39,604 [10988] INFO  SocketServer-17818390 - Session: 9fb86488-ce25-496e-82ee-81707b78fdde/192.168.2.100:15038
+A new session connected!
+2015-11-08 18:33:40,076 [10988] INFO  SocketServer-17818390 - Session: ae78c2ac-8cea-400a-b20c-ba696eac7bd2/192.168.2.100:15041
+A new session connected!
+2015-11-08 18:33:40,642 [10352] INFO  SocketServer-17818390 - Session: 7cde1838-129a-4e95-8bed-979e0884d447/192.168.2.100:15044
+A new session connected!
+2015-11-08 18:33:41,174 [10352] INFO  SocketServer-17818390 - Session: 2e66c290-108d-46eb-ac0b-5b8d3cdeca1f/192.168.2.100:15047
+A new session connected!
+2015-11-08 18:33:53,854 [5524] INFO  SocketServer-17818390 - Session: 2e66c290-108d-46eb-ac0b-5b8d3cdeca1f/192.168.2.100:15047
+This session was closed for ClientClosing!
+2015-11-08 18:33:54,849 [2104] INFO  SocketServer-17818390 - Session: 7cde1838-129a-4e95-8bed-979e0884d447/192.168.2.100:15044
+This session was closed for ClientClosing!
+2015-11-08 18:33:55,700 [5524] INFO  SocketServer-17818390 - Session: ae78c2ac-8cea-400a-b20c-ba696eac7bd2/192.168.2.100:15041
+This session was closed for ClientClosing!
+2015-11-08 18:33:56,283 [4744] INFO  SocketServer-17818390 - Session: 9fb86488-ce25-496e-82ee-81707b78fdde/192.168.2.100:15038
+This session was closed for ClientClosing!
+2015-11-08 18:34:20,294 [11864] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 18:34:20,965 [9524] INFO  SocketServer-32176063 - Session: 7e658067-99df-4c01-8c58-66a35c17fa91/192.168.2.100:15052
+A new session connected!
+2015-11-08 18:34:21,409 [9524] INFO  SocketServer-32176063 - Session: 83bb1a3d-943c-453a-a20c-f4361bc7e440/192.168.2.100:15055
+A new session connected!
+2015-11-08 18:34:21,935 [9524] INFO  SocketServer-32176063 - Session: c591daf3-81b2-4626-9b4b-927b48295034/192.168.2.100:15058
+A new session connected!
+2015-11-08 18:34:22,431 [9524] INFO  SocketServer-32176063 - Session: a8fb950c-7ae8-47a7-8bf1-41a66be0a0e5/192.168.2.100:15061
+A new session connected!
+2015-11-08 18:34:29,847 [9860] INFO  SocketServer-1723863 - Session: 244b378b-4cba-4b51-a34d-305054bbbd79/192.168.2.100:15060
+This session was closed for ClientClosing!
+2015-11-08 18:35:22,268 [10648] INFO  SocketServer-32176063 - The server instance SocketServer-32176063 has been started!
+2015-11-08 18:35:23,005 [9572] INFO  SocketServer-32176063 - Session: 693172eb-d0fb-4cde-b0b0-1d8e367f67c6/192.168.2.100:15068
+A new session connected!
+2015-11-08 18:35:23,405 [9572] INFO  SocketServer-32176063 - Session: 7126153f-53dd-4fd4-8447-14990c274f2f/192.168.2.100:15071
+A new session connected!
+2015-11-08 18:35:23,921 [9572] INFO  SocketServer-32176063 - Session: 05ce2d09-6da4-4744-ad4b-52c398a057ad/192.168.2.100:15074
+A new session connected!
+2015-11-08 18:35:24,419 [9572] INFO  SocketServer-32176063 - Session: 07a31f56-3434-415e-a731-e0df60266aa3/192.168.2.100:15077
+A new session connected!
+2015-11-08 18:35:41,851 [936] INFO  SocketServer-32176063 - Session: 7126153f-53dd-4fd4-8447-14990c274f2f/192.168.2.100:15071
+This session was closed for ClientClosing!
+2015-11-08 18:35:42,491 [11192] INFO  SocketServer-1723863 - Session: c6b553d9-e1f6-4051-b68e-a8fe7fd69e26/192.168.2.100:15076
+This session was closed for ClientClosing!
+2015-11-08 18:43:49,564 [2660] INFO  SocketServer-51396626 - The server instance SocketServer-51396626 has been started!
+2015-11-08 18:43:50,035 [10464] INFO  SocketServer-51396626 - Session: 1e1ff10f-4988-4397-be9a-7bd0d28cf58c/192.168.2.100:15318
+A new session connected!
+2015-11-08 18:43:50,427 [10464] INFO  SocketServer-51396626 - Session: 5da32c33-9a41-4a51-ba71-0fb39e95cbaa/192.168.2.100:15321
+A new session connected!
+2015-11-08 18:43:50,905 [10464] INFO  SocketServer-51396626 - Session: ea573b5c-59c0-425f-a100-5d4d094f7dc5/192.168.2.100:15324
+A new session connected!
+2015-11-08 18:43:51,412 [10464] INFO  SocketServer-51396626 - Session: 8bd01263-b9f8-4638-b792-e541cd91ce06/192.168.2.100:15327
+A new session connected!
+2015-11-08 18:43:52,650 [9988] INFO  SocketServer-51396626 - Session: 5da32c33-9a41-4a51-ba71-0fb39e95cbaa/192.168.2.100:15321
+This session was closed for ClientClosing!
+2015-11-08 18:43:53,110 [9004] INFO  SocketServer-51396626 - Session: 8bd01263-b9f8-4638-b792-e541cd91ce06/192.168.2.100:15327
+This session was closed for ClientClosing!
+2015-11-08 18:43:53,562 [9988] INFO  SocketServer-51396626 - Session: ea573b5c-59c0-425f-a100-5d4d094f7dc5/192.168.2.100:15324
+This session was closed for ClientClosing!
+2015-11-08 18:43:53,965 [9988] INFO  SocketServer-51396626 - Session: 1e1ff10f-4988-4397-be9a-7bd0d28cf58c/192.168.2.100:15318
+This session was closed for ClientClosing!
+2015-11-08 18:49:46,992 [9208] INFO  SocketServer-42119052 - The server instance SocketServer-42119052 has been started!
+2015-11-08 18:49:48,031 [10892] INFO  SocketServer-42119052 - Session: 59e97ecc-a714-47ae-b5df-6e911aa68f52/192.168.2.100:15351
+A new session connected!
+2015-11-08 18:49:48,529 [10892] INFO  SocketServer-42119052 - Session: c10ee7c4-936e-47bc-9db6-8446126363c5/192.168.2.100:15354
+A new session connected!
+2015-11-08 18:49:49,003 [10892] INFO  SocketServer-42119052 - Session: 99afea64-d71f-4c12-9ca3-0e8cc62257b5/192.168.2.100:15357
+A new session connected!
+2015-11-08 18:49:50,063 [10892] INFO  SocketServer-42119052 - Session: 3a4f842b-6cc8-4d7b-aeb3-b8a0807d0e4a/192.168.2.100:15360
+A new session connected!
+2015-11-08 18:52:48,745 [4712] INFO  SocketServer-42119052 - Session: 59e97ecc-a714-47ae-b5df-6e911aa68f52/192.168.2.100:15351
+This session was closed for ClientClosing!
+2015-11-08 18:52:57,529 [7748] INFO  SocketServer-42119052 - Session: 477e72cf-2bb9-41a0-9d0f-ab35df0f1f16/192.168.2.100:15359
+This session was closed for ClientClosing!
+2015-11-08 18:53:12,106 [7080] INFO  SocketServer-17818390 - The server instance SocketServer-17818390 has been started!
+2015-11-08 18:53:12,758 [11068] INFO  SocketServer-17818390 - Session: 6f101391-910b-46b4-86e4-732f305eb699/192.168.2.100:15373
+A new session connected!
+2015-11-08 18:53:13,253 [11068] INFO  SocketServer-17818390 - Session: f32a96fc-c466-43c1-9d28-b49c7aaa292f/192.168.2.100:15377
+A new session connected!
+2015-11-08 18:53:13,816 [11068] INFO  SocketServer-17818390 - Session: e7911204-238f-497c-8375-41b4065fac92/192.168.2.100:15380
+A new session connected!
+2015-11-08 18:53:14,266 [11068] INFO  SocketServer-17818390 - Session: c9e7b771-42e8-4aeb-ae93-20bc4f815110/192.168.2.100:15383
+A new session connected!
+2015-11-08 18:55:35,166 [9568] INFO  SocketServer-17818390 - Session: f32a96fc-c466-43c1-9d28-b49c7aaa292f/192.168.2.100:15377
+This session was closed for ClientClosing!
+2015-11-08 18:55:35,790 [11956] INFO  SocketServer-32176063 - Session: 59c16a5c-3ba8-43a0-a93d-d8bfc36f1161/192.168.2.100:15382
+This session was closed for ClientClosing!

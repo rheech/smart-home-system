@@ -15,6 +15,7 @@ namespace libdeviceui
         public frmDeviceUI()
         {
             InitializeComponent();
+            lvDeviceList.FullRowSelect = true;
         }
 
         private void frmDeviceUI_Load(object sender, EventArgs e)
@@ -26,14 +27,41 @@ namespace libdeviceui
             txtLogConsole.WriteLine(message);
         }
 
+        protected override byte[] cp_OnMessageArrival(int deviceID, ENVELOPE_HEADER header, MESSAGE_DIRECTIVE directive, byte[] data)
+        {
+            return base.cp_OnMessageArrival(deviceID, header, directive, data);
+        }
+
+        protected override string cp_OnTextMessageArrival(int deviceID, ENVELOPE_HEADER header, string text)
+        {
+            MessageBox.Show(text, cp.CurrentID.ToString());
+
+            return base.cp_OnTextMessageArrival(deviceID, header, text);
+        }
+
         private void btnDevList_Click(object sender, EventArgs e)
         {
-            lstDeviceList.Items.Clear();
+            ListViewItem lvi;
+            lvDeviceList.Items.Clear();
 
             foreach (CommunicationBaseInfo cbi in cp.DeviceList)
             {
-                lstDeviceList.Items.Add(cbi.DeviceID);
+                lvi = new ListViewItem(cbi.DeviceID.ToString());
+                lvi.SubItems.Add("Undefined");
+                lvi.SubItems.Add(String.Format("{0}:{1}", cbi.NodeData.TCPAddress, cbi.NodeData.TCPListenPort));
+
+                lvDeviceList.Items.Add(lvi);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cp.Send(cp.LeaderID, "Hello World!");
+        }
+
+        public void WriteLog(string text)
+        {
+            txtLogConsole.WriteLine(text);
         }
     }
 }
