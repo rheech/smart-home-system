@@ -1,0 +1,6 @@
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Proxy\bin\Debug\SuperSocket.ClientEngine.Proxy.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Proxy\bin\Debug\SuperSocket.ClientEngine.Proxy.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Proxy\bin\Debug\SuperSocket.ClientEngine.Common.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Proxy\bin\Debug\SuperSocket.ClientEngine.Common.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Proxy\obj\Debug\SuperSocket.ClientEngine.Proxy.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket.ClientEngine\Proxy\obj\Debug\SuperSocket.ClientEngine.Proxy.pdb

@@ -26,15 +26,14 @@ namespace libdevicecomm
         {
             public int TCPListenPort;
             public IPAddress TCPAddress;
-
-            public IPAddress SOAAddress;
-            public bool isLeader;
+            //public IPAddress SOAAddress;
+            //public bool isLeader;
 
             //public bool Equals(
         }
 
-        public int DeviceID;
-        public NodeInfo info;
+        private int _deviceID;
+        private NodeInfo _nodeData;
 
         /*public CommunicationBaseInfo()
         {
@@ -47,7 +46,7 @@ namespace libdevicecomm
         public CommunicationBaseInfo(int deviceID)
         {
             DeviceID = deviceID;
-            info = new NodeInfo();
+            _nodeData = new NodeInfo();
         }
 
         public string interpretMessage()
@@ -60,13 +59,38 @@ namespace libdevicecomm
             //base.GetObjectData(info, context);
         }
 
+
+        public int DeviceID
+        {
+            get
+            {
+                return _deviceID;
+            }
+            set
+            {
+                _deviceID = value;
+            }
+        }
+
+        public NodeInfo NodeData
+        {
+            get
+            {
+                return _nodeData;
+            }
+            set
+            {
+                _nodeData = value;
+            }
+        }
+
         public bool isTCPReady
         {
             get
             {
-                if (info != null)
+                if (_nodeData != null)
                 {
-                    return info.TCPAddress != null;
+                    return _nodeData.TCPAddress != null;
                 }
 
                 return false;
@@ -77,7 +101,8 @@ namespace libdevicecomm
         {
             CommunicationBaseInfo tempObj;
 
-            if (obj.GetType() == typeof(CommunicationBaseInfo))
+            if (obj != null &&
+                    obj.GetType() == typeof(CommunicationBaseInfo))
             {
                 tempObj = (CommunicationBaseInfo)Convert.ChangeType(obj, typeof(CommunicationBaseInfo));
 

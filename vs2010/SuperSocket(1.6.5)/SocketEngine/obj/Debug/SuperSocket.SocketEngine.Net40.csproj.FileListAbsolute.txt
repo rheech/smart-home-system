@@ -6,3 +6,7 @@ D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\So
 D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketEngine\bin\Debug\SuperSocket.Common.xml
 D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketEngine\bin\Debug\SuperSocket.SocketBase.pdb
 D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketEngine\bin\Debug\SuperSocket.SocketBase.xml
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.SocketEngine.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\SuperSocket.SocketEngine.pdb
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketEngine\obj\Debug\SuperSocket.SocketEngine.dll
+D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\SuperSocket(1.6.5)\SocketEngine\obj\Debug\SuperSocket.SocketEngine.pdb

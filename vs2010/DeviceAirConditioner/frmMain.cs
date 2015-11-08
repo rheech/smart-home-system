@@ -11,7 +11,7 @@ namespace DeviceAirConditioner
 {
     public partial class frmMain : libdeviceui.frmDeviceUI
     {
-        private const int DEVICE_ID = 84762;
+        private const int DEVICE_ID = 10000;
 
         public frmMain()
         {
