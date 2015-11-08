@@ -11,7 +11,7 @@ namespace DeviceHeater
 {
     public partial class frmMain : libdeviceui.frmDeviceUI
     {
-        private const int DEVICE_ID = 19385;
+        private const int DEVICE_ID = 20000;
 
         public frmMain()
         {

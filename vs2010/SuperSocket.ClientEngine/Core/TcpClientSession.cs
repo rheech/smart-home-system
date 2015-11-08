@@ -15,7 +15,7 @@ namespace SuperSocket.ClientEngine
         private bool m_InConnecting = false;
 
         public TcpClientSession(EndPoint remoteEndPoint)
-            : this(remoteEndPoint, 1024)
+            : this(remoteEndPoint, 1024000)
         {
 
         }

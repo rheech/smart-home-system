@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CommunicationBase.cs" />
     <Compile Include="CommunicationBaseInfo.cs" />
+    <Compile Include="CommunicationBaseInfoList.cs" />
     <Compile Include="CommunicationProtocol.cs" />
     <Compile Include="CommunicationSerializable.cs" />
     <Compile Include="SocketSettings.cs" />

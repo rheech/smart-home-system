@@ -5,6 +5,7 @@ using System.Text;
 using SuperSocket.SocketBase;
 using SuperSocket.SocketBase.Protocol;
 using SuperSocket.SocketBase.Config;
+using libnetsocket.Net;
 
 namespace libnetsocket
 {

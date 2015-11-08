@@ -31,15 +31,20 @@
             this.components = new System.ComponentModel.Container();
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabSystemStatus = new System.Windows.Forms.TabPage();
+            this.tabDevList = new System.Windows.Forms.TabPage();
+            this.btnDevList = new System.Windows.Forms.Button();
+            this.lstDeviceList = new System.Windows.Forms.ListBox();
             this.tabLog = new System.Windows.Forms.TabPage();
             this.txtLogConsole = new libdeviceui.cptConsoleTextBox(this.components);
             this.tabMain.SuspendLayout();
+            this.tabDevList.SuspendLayout();
             this.tabLog.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMain
             // 
             this.tabMain.Controls.Add(this.tabSystemStatus);
+            this.tabMain.Controls.Add(this.tabDevList);
             this.tabMain.Controls.Add(this.tabLog);
             this.tabMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabMain.Location = new System.Drawing.Point(0, 24);
@@ -57,6 +62,36 @@
             this.tabSystemStatus.TabIndex = 0;
             this.tabSystemStatus.Text = "System Status";
             this.tabSystemStatus.UseVisualStyleBackColor = true;
+            // 
+            // tabDevList
+            // 
+            this.tabDevList.Controls.Add(this.btnDevList);
+            this.tabDevList.Controls.Add(this.lstDeviceList);
+            this.tabDevList.Location = new System.Drawing.Point(4, 22);
+            this.tabDevList.Name = "tabDevList";
+            this.tabDevList.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDevList.Size = new System.Drawing.Size(376, 240);
+            this.tabDevList.TabIndex = 2;
+            this.tabDevList.Text = "Device List";
+            this.tabDevList.UseVisualStyleBackColor = true;
+            // 
+            // btnDevList
+            // 
+            this.btnDevList.Location = new System.Drawing.Point(263, 179);
+            this.btnDevList.Name = "btnDevList";
+            this.btnDevList.Size = new System.Drawing.Size(75, 23);
+            this.btnDevList.TabIndex = 1;
+            this.btnDevList.Text = "button1";
+            this.btnDevList.UseVisualStyleBackColor = true;
+            this.btnDevList.Click += new System.EventHandler(this.btnDevList_Click);
+            // 
+            // lstDeviceList
+            // 
+            this.lstDeviceList.FormattingEnabled = true;
+            this.lstDeviceList.Location = new System.Drawing.Point(3, 3);
+            this.lstDeviceList.Name = "lstDeviceList";
+            this.lstDeviceList.Size = new System.Drawing.Size(222, 199);
+            this.lstDeviceList.TabIndex = 0;
             // 
             // tabLog
             // 
@@ -90,6 +125,7 @@
             this.Load += new System.EventHandler(this.frmDeviceUI_Load);
             this.Controls.SetChildIndex(this.tabMain, 0);
             this.tabMain.ResumeLayout(false);
+            this.tabDevList.ResumeLayout(false);
             this.tabLog.ResumeLayout(false);
             this.tabLog.PerformLayout();
             this.ResumeLayout(false);
@@ -103,5 +139,8 @@
         private cptConsoleTextBox txtLogConsole;
         private System.Windows.Forms.TabControl tabMain;
         protected System.Windows.Forms.TabPage tabSystemStatus;
+        private System.Windows.Forms.TabPage tabDevList;
+        private System.Windows.Forms.Button btnDevList;
+        private System.Windows.Forms.ListBox lstDeviceList;
     }
 }

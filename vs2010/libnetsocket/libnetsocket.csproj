@@ -42,19 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client\TCPClient.cs" />
-    <Compile Include="NetSocket.cs" />
-    <Compile Include="Server\SocketBinaryReceiveFilter.cs" />
-    <Compile Include="Server\SocketSession.cs" />
-    <Compile Include="Server\SocketServer.cs" />
-    <Compile Include="SocketSettings.cs" />
+    <Compile Include="Net\TCPClient.cs" />
+    <Compile Include="Common\BinaryFormatter.cs" />
+    <Compile Include="Net\SocketBinaryReceiveFilter.cs" />
+    <Compile Include="Net\SocketSession.cs" />
+    <Compile Include="Net\SocketServer.cs" />
+    <Compile Include="Common\SocketSettings.cs" />
+    <Compile Include="Net\TCPServer.cs" />
+    <Compile Include="Net\UDPClient.cs" />
+    <Compile Include="Net\UDPServer.cs" />
     <Compile Include="TestClass2.cs" />
-    <Content Include="Server\SuperSockClientSession.cs.txt" />
-    <Content Include="Server\SuperSockReceiveFilter.cs.txt" />
-    <Content Include="Server\SuperSockServer.cs.txt" />
-    <Compile Include="NetSocket2.cs" />
+    <Content Include="Net\SuperSockClientSession.cs.txt" />
+    <Content Include="Net\SuperSockReceiveFilter.cs.txt" />
+    <Content Include="Net\SuperSockServer.cs.txt" />
+    <Compile Include="Net\NetSocket.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="Server\TCPServer.cs.txt" />
+    <Content Include="Net\TCPServer.cs.txt" />
     <Compile Include="TestClass.cs" />
   </ItemGroup>
   <ItemGroup>

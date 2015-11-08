@@ -11,14 +11,14 @@ namespace DeviceThermometer
 {
     public partial class frmMain : libdeviceui.frmDeviceUI
     {
-        private const int DEVICE_ID = 48694;
+        private const int DEVICE_ID = 30000;
 
         public frmMain()
         {
             InitializeComponent();
             SetSizeDefault(this);
 
-            System.Threading.Thread.Sleep(500);
+            System.Threading.Thread.Sleep(1000);
             StartCommunication(DEVICE_ID);
         }
     }
