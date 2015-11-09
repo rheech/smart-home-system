@@ -12,4 +12,3 @@ D:\Users\Cheong\Desktop\vs2010\DeviceAirConditioner\obj\x86\Debug\DeviceAirCondi
 D:\Users\Cheong\Desktop\vs2010\DeviceAirConditioner\obj\x86\Debug\DeviceAirConditioner.csproj.GenerateResource.Cache
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceAirConditioner.exe
 D:\Users\Cheong\Desktop\vs2010\bin\Debug\DeviceAirConditioner.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\DeviceAirConditioner.exe.config

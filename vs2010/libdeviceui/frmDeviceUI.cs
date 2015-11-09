@@ -36,7 +36,7 @@ namespace libdeviceui
         {
             MessageBox.Show(text, cp.CurrentID.ToString());
 
-            return base.cp_OnTextMessageArrival(deviceID, header, text);
+            return null;
         }
 
         protected override void cp_OnDeviceListUpdate()
