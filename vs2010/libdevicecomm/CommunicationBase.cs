@@ -238,7 +238,8 @@ namespace libdevicecomm
             }
             else if (header.TargetLevel == 2)
             {
-                return OnDataArrival_lv3(remoteEP, header, data);
+                return CreateEnvelope(ENVELOPE_DIRECTIVE.LV3_MESSAGE, 2,
+                                OnDataArrival_lv3(remoteEP, header, data));
             }
 
             return null;

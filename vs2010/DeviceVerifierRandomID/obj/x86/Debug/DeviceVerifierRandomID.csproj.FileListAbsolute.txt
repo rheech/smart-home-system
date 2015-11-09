@@ -21,4 +21,3 @@ D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem_Temp\vs2010\DeviceVerifierRa
 D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem_Temp\vs2010\DeviceVerifierRandomID\bin\Debug\SuperSocket.Common.pdb
 D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem_Temp\vs2010\DeviceVerifierRandomID\bin\Debug\SuperSocket.Common.xml
 D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem_Temp\vs2010\DeviceVerifierRandomID\bin\Debug\SuperSocket.ClientEngine.Common.pdb
-D:\Users\Cheong\Desktop\SourceCodes\SmartHomeSystem\vs2010\bin\Debug\DeviceVerifierRandomID.exe.config

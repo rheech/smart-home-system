@@ -35,7 +35,7 @@ namespace libdevicecomm
         protected override byte[] OnDataArrival_lv3(IPEndPoint remoteEP, ENVELOPE_HEADER header, byte[] data)
         {
             // Read Message
-            MESSAGE_DIRECTIVE directive;
+            /*MESSAGE_DIRECTIVE directive;
             byte[] bDirective;
             byte[] bTrailer;
             int offset = 0;
@@ -51,9 +51,10 @@ namespace libdevicecomm
             Array.Copy(data, offset, bTrailer, 0, bTrailer.Length);
             offset += bTrailer.Length;
 
-            directive = (MESSAGE_DIRECTIVE)BitConverter.ToInt32(bDirective, 0);
+            directive = (MESSAGE_DIRECTIVE)BitConverter.ToInt32(bDirective, 0);*/
+            MESSAGE_DIRECTIVE directive = DispatchMessage(ref data);
 
-            return TranslateMessage(remoteEP, header, directive, bTrailer);
+            return TranslateMessage(remoteEP, header, directive, data);
         }
 
         private byte[] TranslateMessage(IPEndPoint remoteEP, ENVELOPE_HEADER header, MESSAGE_DIRECTIVE directive, byte[] data)
@@ -82,10 +83,38 @@ namespace libdevicecomm
                     break;
             }
 
-            return dataToSend;
+            return CreateMessage(directive, dataToSend);
         }
 
         public void Send(int deviceID, MESSAGE_DIRECTIVE directive, byte[] data)
+        {
+            // Create Message
+            /*byte[] bDirective;
+            byte[] bTotalData;
+            int totalSize;
+            int offset = 0;
+
+            totalSize = sizeof(int) + data.Length;
+            bDirective = new byte[sizeof(int)];
+            bTotalData = new byte[totalSize];
+
+            bDirective = BitConverter.GetBytes((int)directive);
+
+            Array.Copy(bDirective, 0, bTotalData, offset, bDirective.Length);
+            offset += bDirective.Length;
+
+            Array.Copy(data, 0, bTotalData, offset, data.Length);
+            offset += data.Length;*/
+
+            SendDataByID(deviceID, CreateMessage(directive, data));
+        }
+
+        public void Send(int deviceID, string text)
+        {
+            Send(deviceID, MESSAGE_DIRECTIVE.PLAIN_TEXT, System.Text.Encoding.UTF8.GetBytes(text));
+        }
+
+        private byte[] CreateMessage(MESSAGE_DIRECTIVE directive, byte[] data)
         {
             // Create Message
             byte[] bDirective;
@@ -105,13 +134,35 @@ namespace libdevicecomm
             Array.Copy(data, 0, bTotalData, offset, data.Length);
             offset += data.Length;
 
-            SendDataByID(deviceID, bTotalData);
+            return bTotalData;
         }
 
-        public void Send(int deviceID, string text)
+        private MESSAGE_DIRECTIVE DispatchMessage(ref byte[] data)
         {
-            Send(deviceID, MESSAGE_DIRECTIVE.PLAIN_TEXT, System.Text.Encoding.UTF8.GetBytes(text));
+            // Read Message
+            MESSAGE_DIRECTIVE directive;
+            byte[] bDirective;
+            byte[] bTrailer;
+            int offset = 0;
+            int trailerSize;
+
+            trailerSize = data.Length - sizeof(int);
+            bDirective = new byte[sizeof(int)];
+            bTrailer = new byte[trailerSize];
+
+            Array.Copy(data, offset, bDirective, 0, bDirective.Length);
+            offset += bDirective.Length;
+
+            Array.Copy(data, offset, bTrailer, 0, bTrailer.Length);
+            offset += bTrailer.Length;
+
+            directive = (MESSAGE_DIRECTIVE)BitConverter.ToInt32(bDirective, 0);
+
+            data = bTrailer;
+
+            return directive;
         }
+
 
         #region DeviceID Based Communication
         private IPEndPoint GetAddressByID(int deviceID)
