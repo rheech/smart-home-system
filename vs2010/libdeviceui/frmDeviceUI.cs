@@ -34,7 +34,14 @@ namespace libdeviceui
 
         protected override string cp_OnTextMessageArrival(int deviceID, ENVELOPE_HEADER header, string text)
         {
-            MessageBox.Show(text, cp.CurrentID.ToString());
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(() => this.cp_OnTextMessageArrival(deviceID, header, text)));
+            }
+            else
+            {
+                MessageBox.Show(text, cp.CurrentID.ToString());
+            }
 
             return null;
         }
